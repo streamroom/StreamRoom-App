@@ -79,6 +79,8 @@ Allows the user to choose their favorite genres and artists and then suggests th
 
 ### [BONUS] Digital Wireframes & Mockups
 
+<img src="https://i.imgur.com/Yh2MakZ.jpg">
+
 ### [BONUS] Interactive Prototype
 
 ## Schema 
