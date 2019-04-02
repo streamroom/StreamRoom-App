@@ -37,8 +37,8 @@ Allows the user to choose their favorite genres and artists and then suggests th
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* chat fuctionality with emoji
+* users can post links (See security options)
 
 ### 2. Screen Archetypes
 
