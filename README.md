@@ -37,27 +37,27 @@ Allows the user to choose their favorite genres and artists and then suggests th
 
 **Optional Nice-to-have Stories**
 
-* chat fuctionality with emoji
-* users can post links (See security options)
+* [fill in your required user stories here]
+* ...
 
 ### 2. Screen Archetypes
 
 * Login Screeen
 * Register - Users set up username and password or login into account
-* Preferences Screen - When registering the user will be asked for a set up preferences including genre, artists, with other characteristics such as sub genre being optional.
+    * Preferences Screen - When registering the user will be asked for a set up preferences including genre, artists, with other characteristics such as sub genre being optional.
 * Home Screen
-* List the different stream room options that the user has
-* Your Streamrooms
-* Rooms that you actively particpate in
-* Friends Streamrooms 
-* Rooms that your friends are active in
-* Public Streamrooms 
-*  Rooms of anonymous people that align to your preferences 
+    * List the different stream room options that the user has
+        * Your Streamrooms
+            * Rooms that you actively particpate in
+        * Friends Streamrooms 
+            * Rooms that your friends are active in
+        * Public Streamrooms 
+            *  Rooms of anonymous people that align to your preferences 
 * My Music 
-* Music that you have approved from all your playlists. Includes shared playlists.
+    * Music that you have approved from all your playlists. Includes shared playlists.
 * Settings
 * Profile
-* Allow users to add an avatar, and a status. Also the way to change preferences.
+    * Allow users to add an avatar, and a status. Also the way to change preferences.
 
 ### 3. Navigation
 
@@ -79,15 +79,58 @@ Allows the user to choose their favorite genres and artists and then suggests th
 
 ### [BONUS] Digital Wireframes & Mockups
 
-<img src="https://i.imgur.com/Yh2MakZ.jpg">
-
 ### [BONUS] Interactive Prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+Stream Rooms
+
+User
 ### Networking
-- [Add list of network requests by screen ]
+
+- Home Feed Screen
+    - (Read/Get) Store and display the users rooms
+        ```swift
+        let query = PFQuery(className:"Rooms")
+        query.whereKey("member", equalTo: currentUser)
+        query.order(byDescending: "createdAt")
+        query.findObjectsInBackground { (rooms: [PFObject]?, error: Error?) in
+        if let error = error { 
+            print(error.localizedDescription)
+        } else if let rooms = rooms {
+            print("Retrieved \(rooms.count) user rooms.")
+            }
+        }
+         ```
+    - (Delete) Remove user from a room
+        ```swift
+        query.remove(forKey: "playerName")
+        query.saveInBackground()
+         ```
+- Profile screen
+    - (Read/Get) Display current user object
+         ```swift
+        let query = PFQuery(className:"users")
+        query.getObjectInBackground(withId:"userName") {
+        (currentUser: PFObject?, error: Error?) in
+        if let error = error {
+        print(error.localizedDescription)
+        } else {
+        //The object has been retrieved
+        print(currentUser)
+            }
+        }
+        ```
+    - (Update) Add user profile image 
+        ```swift
+        let imageUrl = URL(string: (user["profile_image_url_https"] as? String)!)
+        let data = try? Data(contentsOf: imageUrl!)
+        
+        if let imageData = data{
+            cell.profileImageView.image = UIImage(data: imageData)
+        }
+        ```
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
