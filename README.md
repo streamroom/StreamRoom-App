@@ -82,11 +82,28 @@ Allows the user to choose their favorite genres and artists and then suggests th
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-Stream Rooms
+#### Stream Rooms
+| Property Name   | Type             | Description                                         |
+|-----------------|------------------|-----------------------------------------------------|
+| genres          | Array of Genres  | contains the main genres feature in stream          |
+| artists         | Array of Artists | contains artists that serve as base for stream      |
+| dislikedGenres  | Array of Genres  | genres that users indicated don't belong in stream  |
+| dislikedArtists | Array of Artists | artists that users indicated don't belong in stream |
+| id              | Integer          | unique identifier for stream                        |
+| privacy         | String           | indicated whether stream in public or private       |
+| users           | Array of Users   | users that can contribute to stream                 |
 
-User
+#### User
+| Property Name | Type             | Description                             |
+|---------------|------------------|-----------------------------------------|
+| id            | Integer          | unique identifier for user              |
+| username      | String           | unique login username                   |
+| displayName   | String           | name that is displayed to others in app |
+| profilePic    | File             | profile picture for user                |
+| favGenres     | Array of Genres  | genres that user indicated they liked   |
+| favArtists    | Array of Artists | artists that user indicated they liked  |
+| friends       | Array of Users   | list of in-app friends                  |
 ### Networking
 
 - Home Feed Screen
