@@ -38,34 +38,6 @@
                                     <constraint firstAttribute="width" constant="28" id="m9I-f9-jlP"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azz-Do-TKF">
-                                <rect key="frame" x="65" y="589" width="120" height="40"/>
-                                <color key="backgroundColor" red="0.26666666666666666" green="0.5607843137254902" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0PG-o2-y14"/>
-                                    <constraint firstAttribute="width" constant="120" id="N3l-ne-NuK"/>
-                                </constraints>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAc-iw-iQe"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtd-jY-MgM">
-                                <rect key="frame" x="193" y="589" width="120" height="40"/>
-                                <color key="backgroundColor" red="0.26690797384177828" green="0.56249634747577804" blue="0.49334717449885729" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="X8R-1w-5ki"/>
-                                    <constraint firstAttribute="width" constant="120" id="s2O-8U-2df"/>
-                                </constraints>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P0P-ya-Q60"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-qW-3v0">
                                 <rect key="frame" x="27.5" y="474.5" width="320" height="3"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,14 +87,50 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-S9-FbH">
+                                <rect key="frame" x="61" y="578" width="253" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azz-Do-TKF">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                                        <color key="backgroundColor" red="0.26666666666666666" green="0.5607843137254902" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0PG-o2-y14"/>
+                                            <constraint firstAttribute="width" constant="120" id="N3l-ne-NuK"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAc-iw-iQe"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtd-jY-MgM">
+                                        <rect key="frame" x="133" y="0.0" width="120" height="40"/>
+                                        <color key="backgroundColor" red="0.26690797384177828" green="0.56249634747577804" blue="0.49334717449885729" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="X8R-1w-5ki"/>
+                                            <constraint firstAttribute="width" constant="120" id="s2O-8U-2df"/>
+                                        </constraints>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P0P-ya-Q60"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yIe-qW-3v0" firstAttribute="leading" secondItem="9Rh-5G-Nsy" secondAttribute="leading" id="3f7-3U-sQv"/>
+                            <constraint firstItem="8ws-S9-FbH" firstAttribute="top" secondItem="MZ5-Vu-kte" secondAttribute="bottom" constant="58.5" id="49B-Xa-edC"/>
                             <constraint firstItem="40Z-lP-OKe" firstAttribute="top" secondItem="yIe-qW-3v0" secondAttribute="bottom" constant="20" id="7Co-K2-hn5"/>
                             <constraint firstItem="MZ5-Vu-kte" firstAttribute="centerX" secondItem="sDE-1b-jHC" secondAttribute="centerX" id="AP3-Sk-9k7"/>
                             <constraint firstItem="yIe-qW-3v0" firstAttribute="top" secondItem="9Rh-5G-Nsy" secondAttribute="bottom" id="IHS-Gh-3Jb"/>
                             <constraint firstItem="0yL-J6-iiC" firstAttribute="top" secondItem="sDE-1b-jHC" secondAttribute="bottom" constant="50" id="J7I-NL-bDt"/>
+                            <constraint firstItem="8ws-S9-FbH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T56-ZR-ozL"/>
                             <constraint firstItem="MZ5-Vu-kte" firstAttribute="trailing" secondItem="40Z-lP-OKe" secondAttribute="trailing" id="VgY-RK-GnO"/>
                             <constraint firstItem="MZ5-Vu-kte" firstAttribute="leading" secondItem="55t-g8-KsW" secondAttribute="leading" id="a4K-lb-6Hz"/>
                             <constraint firstItem="0yL-J6-iiC" firstAttribute="leading" secondItem="9Rh-5G-Nsy" secondAttribute="trailing" constant="10" id="eBj-EA-WzX"/>
