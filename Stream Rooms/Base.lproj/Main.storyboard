@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="40Z-lP-OKe">
-                                <rect key="frame" x="65.5" y="497.5" width="282" height="19"/>
+                                <rect key="frame" x="85" y="607" width="282" height="19"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.32246950270000002" green="0.67546033859999999" blue="0.5882304907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -32,14 +32,14 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="9Rh-5G-Nsy">
-                                <rect key="frame" x="27.5" y="441.5" width="28" height="33"/>
+                                <rect key="frame" x="47" y="551" width="28" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="XZ3-us-tac"/>
                                     <constraint firstAttribute="width" constant="28" id="m9I-f9-jlP"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-qW-3v0">
-                                <rect key="frame" x="27.5" y="474.5" width="320" height="3"/>
+                                <rect key="frame" x="47" y="584" width="320" height="3"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="RIA-7z-EyB"/>
@@ -50,7 +50,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZ5-Vu-kte">
-                                <rect key="frame" x="27.5" y="516.5" width="320" height="3"/>
+                                <rect key="frame" x="47" y="626" width="320" height="3"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="1Zd-jO-qiS"/>
@@ -61,14 +61,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="55t-g8-KsW">
-                                <rect key="frame" x="27.5" y="481.5" width="28" height="33"/>
+                                <rect key="frame" x="47" y="591" width="28" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="Etm-ZY-3Sh"/>
                                     <constraint firstAttribute="height" constant="33" id="TFv-JR-ubS"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sDE-1b-jHC">
-                                <rect key="frame" x="67.5" y="279.5" width="240" height="128"/>
+                                <rect key="frame" x="87" y="389" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.50790319709999998" green="0.77467424409999996" blue="0.86383146050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="UOR-z3-dVi"/>
@@ -76,7 +76,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yL-J6-iiC">
-                                <rect key="frame" x="65.5" y="457.5" width="282" height="17"/>
+                                <rect key="frame" x="85" y="567" width="282" height="17"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.32246950270000002" green="0.67546033859999999" blue="0.5882304907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -88,7 +88,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-S9-FbH">
-                                <rect key="frame" x="61" y="578" width="253" height="40"/>
+                                <rect key="frame" x="80.5" y="687.5" width="253" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azz-Do-TKF">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
@@ -158,11 +158,95 @@
             <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Xtf-i2-7gR">
+            <objects>
+                <viewController id="aJi-YB-BFa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PaH-Zv-ejg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Et4-xs-DkN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="music_icon" id="wwg-6c-yLC" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laK-nS-hzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423" y="-1758"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z8C-PT-iqU">
+            <objects>
+                <viewController id="5Ph-Of-4OR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iaZ-EX-XQr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QIy-e5-nUS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="home_icon" id="dVI-cd-xub" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZf-Gx-ir3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="-1758"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="JaT-b8-HRq">
+            <objects>
+                <tabBarController id="M89-hd-nCs" customClass="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2u9-EM-RAn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5Ph-Of-4OR" kind="relationship" relationship="viewControllers" id="L83-mx-b6b"/>
+                        <segue destination="aJi-YB-BFa" kind="relationship" relationship="viewControllers" id="jmB-FE-sPv"/>
+                        <segue destination="1EB-DK-ZJq" kind="relationship" relationship="viewControllers" id="cJ4-22-OdN"/>
+                        <segue destination="JKY-0y-oKr" kind="relationship" relationship="viewControllers" id="LYB-dr-oAB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N5E-dV-5QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="-1019"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oOZ-3l-oGa">
+            <objects>
+                <viewController id="1EB-DK-ZJq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8TF-y4-6VI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kej-Wb-Jse"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="settings" id="FIn-AH-O94" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeL-aC-EyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480" y="-1014"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9zC-Fp-nZ1">
+            <objects>
+                <viewController id="JKY-0y-oKr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DG9-s0-Ej7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="79D-tk-aXz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="profile-icon-9" id="CEU-0U-51z" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbq-Mi-x88" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1378" y="-1007"/>
+        </scene>
+        <!--Home View Controller-->
         <scene sceneID="fab-IU-msb">
             <objects>
-                <viewController id="Ic6-fY-XBE" sceneMemberID="viewController">
+                <viewController id="Ic6-fY-XBE" customClass="HomeViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BKs-87-aCt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EJx-kE-R6Z"/>
@@ -174,7 +258,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="home_icon" width="30" height="30"/>
+        <image name="music_icon" width="30" height="30"/>
         <image name="password" width="848" height="980"/>
+        <image name="profile-icon-9" width="30" height="30"/>
+        <image name="settings" width="30.239999771118164" height="30.239999771118164"/>
         <image name="username" width="480" height="480"/>
     </resources>
 </document>

@@ -10,10 +10,11 @@
 		3E2D8F230477798454D01609 /* Pods_Stream_RoomsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF7EF72344D932536DAEF0E /* Pods_Stream_RoomsUITests.framework */; };
 		549F96F4D4083D31381F206F /* Pods_Stream_RoomsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48FBFBF2166E2A10D5AA7A2 /* Pods_Stream_RoomsTests.framework */; };
 		5EB3697002298BDD206D05E8 /* Pods_Stream_Rooms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9633D02289C22723A9EC2ED5 /* Pods_Stream_Rooms.framework */; };
+		7D8460F822570C38009F4D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8460F722570C38009F4D4E /* Assets.xcassets */; };
+		7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9A87F22568A33008B61DD /* HomeViewController.swift */; };
 		7DC584C4225516DE005C9E12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584C3225516DE005C9E12 /* AppDelegate.swift */; };
 		7DC584C6225516DE005C9E12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584C5225516DE005C9E12 /* ViewController.swift */; };
 		7DC584C9225516DE005C9E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC584C7225516DE005C9E12 /* Main.storyboard */; };
-		7DC584CB225516E1005C9E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC584CA225516E1005C9E12 /* Assets.xcassets */; };
 		7DC584CE225516E1005C9E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC584CC225516E1005C9E12 /* LaunchScreen.storyboard */; };
 		7DC584D9225516E1005C9E12 /* Stream_RoomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584D8225516E1005C9E12 /* Stream_RoomsTests.swift */; };
 		7DC584E4225516E1005C9E12 /* Stream_RoomsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584E3225516E1005C9E12 /* Stream_RoomsUITests.swift */; };
@@ -42,11 +43,12 @@
 		363CAB4B8DD6633D16E7E314 /* Pods-Stream RoomsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsUITests/Pods-Stream RoomsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42178297D6D47A014B1DEB66 /* Pods-Stream Rooms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream Rooms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms.debug.xcconfig"; sourceTree = "<group>"; };
 		565A4F349A256C48F66127AF /* Pods-Stream RoomsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsTests/Pods-Stream RoomsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D8460F722570C38009F4D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DB9A87F22568A33008B61DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7DC584C0225516DE005C9E12 /* Stream Rooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stream Rooms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC584C3225516DE005C9E12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC584C5225516DE005C9E12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7DC584C8225516DE005C9E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7DC584CA225516E1005C9E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DC584CD225516E1005C9E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DC584CF225516E1005C9E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC584D4225516E1005C9E12 /* Stream RoomsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stream RoomsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,8 +119,9 @@
 				7DC584C3225516DE005C9E12 /* AppDelegate.swift */,
 				7DC584C5225516DE005C9E12 /* ViewController.swift */,
 				7DC584C7225516DE005C9E12 /* Main.storyboard */,
-				7DC584CA225516E1005C9E12 /* Assets.xcassets */,
+				7DB9A87F22568A33008B61DD /* HomeViewController.swift */,
 				7DC584CC225516E1005C9E12 /* LaunchScreen.storyboard */,
+				7D8460F722570C38009F4D4E /* Assets.xcassets */,
 				7DC584CF225516E1005C9E12 /* Info.plist */,
 			);
 			path = "Stream Rooms";
@@ -274,7 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC584CE225516E1005C9E12 /* LaunchScreen.storyboard in Resources */,
-				7DC584CB225516E1005C9E12 /* Assets.xcassets in Resources */,
+				7D8460F822570C38009F4D4E /* Assets.xcassets in Resources */,
 				7DC584C9225516DE005C9E12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,16 +375,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/CircleMenu/CircleMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -397,6 +400,7 @@
 			files = (
 				7DC584C6225516DE005C9E12 /* ViewController.swift in Sources */,
 				7DC584C4225516DE005C9E12 /* AppDelegate.swift in Sources */,
+				7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DB91F1A831A02449E5958D4E9EA8BF1"
-               BlueprintName = "CircleMenu"
+               BlueprintIdentifier = "AC5F0E4A49667E6D8F86E6D8326576E2"
+               BlueprintName = "RAMAnimatedTabBarController"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "CircleMenu.framework">
+               BuildableName = "RAMAnimatedTabBarController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

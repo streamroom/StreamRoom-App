@@ -7,7 +7,7 @@ target 'Stream Rooms' do
 
   # Pods for Stream Rooms
 	pod 'Parse'
- 	pod 'CircleMenu'
+ 	pod 'RAMAnimatedTabBarController'
 
   target 'Stream RoomsTests' do
     inherit! :search_paths
