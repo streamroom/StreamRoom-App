@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome" id="BYZ-38-t0r" customClass="ViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,53 +150,80 @@
                         <outlet property="passwordField" destination="40Z-lP-OKe" id="BFY-q2-XtC"/>
                         <outlet property="registerButton" destination="qtd-jY-MgM" id="j21-X9-x4W"/>
                         <outlet property="usernameField" destination="0yL-J6-iiC" id="qDd-SD-4x7"/>
-                        <segue destination="Ic6-fY-XBE" kind="show" identifier="loginSegue" id="lNs-Wj-hTE"/>
+                        <segue destination="M89-hd-nCs" kind="show" identifier="loginSegue" id="str-gT-q9h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
-        <!--View Controller-->
+        <!--Music-->
         <scene sceneID="Xtf-i2-7gR">
             <objects>
-                <viewController id="aJi-YB-BFa" sceneMemberID="viewController">
+                <viewController title="Music" id="aJi-YB-BFa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PaH-Zv-ejg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Et4-xs-DkN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="music_icon" id="wwg-6c-yLC" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                    <tabBarItem key="tabBarItem" title="" image="music_icon" id="wwg-6c-yLC" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="kaC-GE-Asn" id="T7C-Qf-qcO"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="laK-nS-hzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="kaC-GE-Asn" customClass="RAMFlipBottomTransitionItemAnimations" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.2666666667" green="0.56078431370000004" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1423" y="-1758"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="z8C-PT-iqU">
             <objects>
-                <viewController id="5Ph-Of-4OR" sceneMemberID="viewController">
+                <viewController title="Home" id="5Ph-Of-4OR" customClass="HomeViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iaZ-EX-XQr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QIy-e5-nUS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="home_icon" id="dVI-cd-xub" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                    <tabBarItem key="tabBarItem" image="home_icon" id="dVI-cd-xub" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="8Ti-zC-10h" id="B7I-ut-3ib"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZf-Gx-ir3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="8Ti-zC-10h" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.2666666667" green="0.56078431370000004" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="484" y="-1758"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="JaT-b8-HRq">
             <objects>
-                <tabBarController id="M89-hd-nCs" customClass="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                <tabBarController id="M89-hd-nCs" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2u9-EM-RAn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="5Ph-Of-4OR" kind="relationship" relationship="viewControllers" id="L83-mx-b6b"/>
@@ -209,52 +236,65 @@
             </objects>
             <point key="canvasLocation" x="-494" y="-1019"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="oOZ-3l-oGa">
             <objects>
-                <viewController id="1EB-DK-ZJq" sceneMemberID="viewController">
+                <viewController title="Settings" id="1EB-DK-ZJq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8TF-y4-6VI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kej-Wb-Jse"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="settings" id="FIn-AH-O94" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                    <tabBarItem key="tabBarItem" title="" image="setting-567-722008" id="FIn-AH-O94" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="kl5-oP-s41" id="SDc-yH-C2s"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeL-aC-EyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="kl5-oP-s41" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.2666666667" green="0.56078431370000004" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="480" y="-1014"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="9zC-Fp-nZ1">
             <objects>
-                <viewController id="JKY-0y-oKr" sceneMemberID="viewController">
+                <viewController title="Profile" id="JKY-0y-oKr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DG9-s0-Ej7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="79D-tk-aXz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="profile-icon-9" id="CEU-0U-51z" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile-icon-9" id="CEU-0U-51z" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="7id-7N-lPl" id="JzN-pd-oPk"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbq-Mi-x88" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="7id-7N-lPl" customClass="RAMRotationAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.2666666667" green="0.56078431370000004" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1378" y="-1007"/>
-        </scene>
-        <!--Home View Controller-->
-        <scene sceneID="fab-IU-msb">
-            <objects>
-                <viewController id="Ic6-fY-XBE" customClass="HomeViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BKs-87-aCt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="EJx-kE-R6Z"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ql4-5n-3Et" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="954" y="27"/>
         </scene>
     </scenes>
     <resources>
@@ -262,7 +302,7 @@
         <image name="music_icon" width="30" height="30"/>
         <image name="password" width="848" height="980"/>
         <image name="profile-icon-9" width="30" height="30"/>
-        <image name="settings" width="30.239999771118164" height="30.239999771118164"/>
+        <image name="setting-567-722008" width="30" height="30"/>
         <image name="username" width="480" height="480"/>
     </resources>
 </document>
