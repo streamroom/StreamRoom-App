@@ -160,7 +160,7 @@
         <!--Music-->
         <scene sceneID="Xtf-i2-7gR">
             <objects>
-                <viewController title="Music" id="aJi-YB-BFa" sceneMemberID="viewController">
+                <viewController title="Music" id="aJi-YB-BFa" customClass="MusicViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PaH-Zv-ejg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="1423" y="-1758"/>
+            <point key="canvasLocation" x="3100" y="-349"/>
         </scene>
         <!--Home-->
         <scene sceneID="z8C-PT-iqU">
@@ -215,7 +215,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="484" y="-1758"/>
+            <point key="canvasLocation" x="2161" y="-349"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="JaT-b8-HRq">
@@ -234,12 +234,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5E-dV-5QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-494" y="-1019"/>
+            <point key="canvasLocation" x="964" y="27"/>
         </scene>
         <!--Settings-->
         <scene sceneID="oOZ-3l-oGa">
             <objects>
-                <viewController title="Settings" id="1EB-DK-ZJq" sceneMemberID="viewController">
+                <viewController title="Settings" id="1EB-DK-ZJq" customClass="SettingsViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8TF-y4-6VI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,12 +264,12 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="480" y="-1014"/>
+            <point key="canvasLocation" x="2158" y="395"/>
         </scene>
         <!--Profile-->
         <scene sceneID="9zC-Fp-nZ1">
             <objects>
-                <viewController title="Profile" id="JKY-0y-oKr" sceneMemberID="viewController">
+                <viewController title="Profile" id="JKY-0y-oKr" customClass="ProfileViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DG9-s0-Ej7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +294,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="1378" y="-1007"/>
+            <point key="canvasLocation" x="3055" y="402"/>
         </scene>
     </scenes>
     <resources>

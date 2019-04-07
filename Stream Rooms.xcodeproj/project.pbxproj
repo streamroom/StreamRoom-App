@@ -12,6 +12,9 @@
 		5EB3697002298BDD206D05E8 /* Pods_Stream_Rooms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9633D02289C22723A9EC2ED5 /* Pods_Stream_Rooms.framework */; };
 		7D8460F822570C38009F4D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8460F722570C38009F4D4E /* Assets.xcassets */; };
 		7DA038232257E1D30068B386 /* RAMAnimatedTabBarController in Resources */ = {isa = PBXBuildFile; fileRef = 7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */; };
+		7DA038262259A4340068B386 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038252259A4340068B386 /* MusicViewController.swift */; };
+		7DA038282259A4460068B386 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038272259A4460068B386 /* SettingsViewController.swift */; };
+		7DA0382A2259A4510068B386 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038292259A4510068B386 /* ProfileViewController.swift */; };
 		7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9A87F22568A33008B61DD /* HomeViewController.swift */; };
 		7DC584C4225516DE005C9E12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584C3225516DE005C9E12 /* AppDelegate.swift */; };
 		7DC584C6225516DE005C9E12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584C5225516DE005C9E12 /* ViewController.swift */; };
@@ -46,6 +49,9 @@
 		565A4F349A256C48F66127AF /* Pods-Stream RoomsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsTests/Pods-Stream RoomsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D8460F722570C38009F4D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RAMAnimatedTabBarController; path = "../../animated-tab-bar/RAMAnimatedTabBarController"; sourceTree = "<group>"; };
+		7DA038252259A4340068B386 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		7DA038272259A4460068B386 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7DA038292259A4510068B386 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7DB9A87F22568A33008B61DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7DC584C0225516DE005C9E12 /* Stream Rooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stream Rooms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC584C3225516DE005C9E12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DA038242259A3E60068B386 /* Tab Bar View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DB9A87F22568A33008B61DD /* HomeViewController.swift */,
+				7DA038252259A4340068B386 /* MusicViewController.swift */,
+				7DA038272259A4460068B386 /* SettingsViewController.swift */,
+				7DA038292259A4510068B386 /* ProfileViewController.swift */,
+			);
+			path = "Tab Bar View Controllers";
+			sourceTree = "<group>";
+		};
 		7DC584B7225516DE005C9E12 = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +135,11 @@
 		7DC584C2225516DE005C9E12 /* Stream Rooms */ = {
 			isa = PBXGroup;
 			children = (
+				7DA038242259A3E60068B386 /* Tab Bar View Controllers */,
 				7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */,
 				7DC584C3225516DE005C9E12 /* AppDelegate.swift */,
 				7DC584C5225516DE005C9E12 /* ViewController.swift */,
 				7DC584C7225516DE005C9E12 /* Main.storyboard */,
-				7DB9A87F22568A33008B61DD /* HomeViewController.swift */,
 				7DC584CC225516E1005C9E12 /* LaunchScreen.storyboard */,
 				7D8460F722570C38009F4D4E /* Assets.xcassets */,
 				7DC584CF225516E1005C9E12 /* Info.plist */,
@@ -402,8 +419,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA0382A2259A4510068B386 /* ProfileViewController.swift in Sources */,
+				7DA038262259A4340068B386 /* MusicViewController.swift in Sources */,
 				7DC584C6225516DE005C9E12 /* ViewController.swift in Sources */,
 				7DC584C4225516DE005C9E12 /* AppDelegate.swift in Sources */,
+				7DA038282259A4460068B386 /* SettingsViewController.swift in Sources */,
 				7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

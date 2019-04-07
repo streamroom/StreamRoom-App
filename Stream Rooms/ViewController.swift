@@ -40,39 +40,55 @@ class ViewController: UIViewController {
         loginButton.layer.cornerRadius = 20
         registerButton.layer.cornerRadius = 20
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginSegue", sender: self)
+        }
+        
+        
+        
+    }
 
 
     @IBAction func onLogin(_ sender: Any) {
-        PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!) { (user: PFUser?, error: Error?) in
-            if user != nil {
-                print("You're logged in!")
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil{
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
-        // display view controller that needs to shown after successful login
     }
     
     @IBAction func onRegister(_ sender: Any) {
-        let newUser = PFUser()
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
         
-        newUser.username = usernameField.text
-        newUser.password = passwordField.text
-        newUser.signUpInBackground { (success: Bool, error: Error?) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                print("Yay, created a user!")
+        user.signUpInBackground { (success, error) in
+            if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                // manually segue to logged in view
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
-}
+        
+        
+        
+    }
 
 func loginUser() {
-    
+
     let username = usernameField.text ?? ""
     let password = passwordField.text ?? ""
-    
+
     PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
         if let error = error {
             print("User log in failed: \(error.localizedDescription)")

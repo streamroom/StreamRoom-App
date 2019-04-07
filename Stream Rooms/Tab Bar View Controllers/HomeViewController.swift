@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController {
 
@@ -18,7 +19,16 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
         
-
+//    @IBAction func onLogout(_ sender: Any) {
+//        PFUser.logOutInBackground { (error) in
+//            if (error != nil) {
+//                print(error.debugDescription)
+//                print(error!.localizedDescription)
+//            }
+//        }
+//        self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+//    }
+    
 
     /*
     // MARK: - Navigation
