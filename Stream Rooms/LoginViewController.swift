@@ -9,8 +9,8 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
-
+class LoginViewController: UIViewController {
+    
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -51,8 +51,8 @@ class ViewController: UIViewController {
         
         
     }
-
-
+    
+    
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
@@ -83,23 +83,23 @@ class ViewController: UIViewController {
         
         
     }
-
-func loginUser() {
-
-    let username = usernameField.text ?? ""
-    let password = passwordField.text ?? ""
-
-    PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
-        if let error = error {
-            print("User log in failed: \(error.localizedDescription)")
-        } else {
-            print("User logged in successfully")
-            // display view controller that needs to shown after successful login
+    
+    func loginUser() {
+        
+        let username = usernameField.text ?? ""
+        let password = passwordField.text ?? ""
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
+            if let error = error {
+                print("User log in failed: \(error.localizedDescription)")
+            } else {
+                print("User logged in successfully")
+                // display view controller that needs to shown after successful login
+            }
         }
     }
-}
     
-
-
+    
+    
 }
 
