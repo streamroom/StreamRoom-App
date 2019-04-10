@@ -151,3 +151,31 @@ Allows the user to choose their favorite genres and artists and then suggests th
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
+-----------------------------------------------------------------------------------------------------------------------------
+
+#UPDATE WEEK #1
+
+
+- [x] Create a login screen
+       - Add a username field
+       - Add a password field
+       - Add a register button for new users
+- [x] create a logo for the app
+       - Must not be copyrighted
+- [x] Deploy to Heroku
+- [x] Test deployment
+- [x] Setup local Parse Dashboard
+- [x] Add Parse Client to Project
+- [x] new user information can be saved into the server
+- [x] new user screen
+     -  App asks what the user preference in music are
+     -  App asks if user would like to join a public streamroom or create a new one.
+
+- [x] all options saved to the server and filtered accordingly.
+
+
+
+https://dashboard.heroku.com/apps/obscure-journey-30297
+
+
+<img src="http://g.recordit.co/oaOqlZerlX.gif" width=250><br>
