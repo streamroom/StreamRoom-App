@@ -11,9 +11,14 @@ import Parse
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var logoutButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        roundButtons()
         // Do any additional setup after loading the view.
     }
     
@@ -24,7 +29,12 @@ class SettingsViewController: UIViewController {
                 print(error!.localizedDescription)
             }
         }
-        self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+            UserDefaults.standard.set(false, forKey: "userLoggedIn")
+            self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+    }
+    
+    func roundButtons() {
+        logoutButton.layer.cornerRadius = 20
     }
     
     /*
