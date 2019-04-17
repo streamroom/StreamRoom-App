@@ -278,7 +278,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wuj-ez-gBE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wuj-ez-gBE">
                                 <rect key="frame" x="10" y="226" width="394" height="197"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wuj-ez-gBE" secondAttribute="height" multiplier="4:2" id="gcO-rR-Hv5"/>
@@ -367,11 +367,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5E-dV-5QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="406" y="27"/>
-=======
-            <point key="canvasLocation" x="1206" y="27"/>
->>>>>>> 80a8e4acdfb2109922476b0907697d6ff0f41ab3
         </scene>
         <!--Settings-->
         <scene sceneID="oOZ-3l-oGa">
@@ -475,6 +471,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="1090" height="595"/>
         <image name="home_icon" width="30" height="30"/>
         <image name="music_icon" width="30" height="30"/>
         <image name="password" width="848" height="980"/>

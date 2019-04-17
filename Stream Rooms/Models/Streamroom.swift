@@ -9,7 +9,7 @@
 import Foundation
 import Parse
 
-class Streamroom: PFObject {
+class Streamroom: PFObject, PFSubclassing {
     var name: String?
     var id: UUID?
     var owner: PFUser?
