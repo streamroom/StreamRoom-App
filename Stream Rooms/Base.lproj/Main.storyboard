@@ -367,7 +367,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5E-dV-5QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="406" y="27"/>
+=======
+            <point key="canvasLocation" x="1206" y="27"/>
+>>>>>>> 80a8e4acdfb2109922476b0907697d6ff0f41ab3
         </scene>
         <!--Settings-->
         <scene sceneID="oOZ-3l-oGa">
@@ -376,6 +380,19 @@
                     <view key="view" contentMode="scaleToFill" id="8TF-y4-6VI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWN-TJ-ixr">
+                                <rect key="frame" x="141" y="765" width="132" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2666666667" green="0.56078431370000004" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLogout:" destination="1EB-DK-ZJq" eventType="touchUpInside" id="1RR-bZ-CoG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kej-Wb-Jse"/>
                     </view>
@@ -384,6 +401,10 @@
                             <outlet property="animation" destination="kl5-oP-s41" id="SDc-yH-C2s"/>
                         </connections>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="logoutButton" destination="VWN-TJ-ixr" id="fzB-Kq-iJp"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="logoutSegue" id="mKZ-aa-5QJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeL-aC-EyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="kl5-oP-s41" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController">
@@ -397,7 +418,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="2158" y="395"/>
+            <point key="canvasLocation" x="2157.971014492754" y="394.41964285714283"/>
         </scene>
         <!--Profile-->
         <scene sceneID="9zC-Fp-nZ1">
@@ -427,7 +448,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="3055" y="402"/>
+            <point key="canvasLocation" x="3081" y="394"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9TZ-IW-AEU">

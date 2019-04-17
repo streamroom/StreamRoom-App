@@ -18,15 +18,6 @@ class ProfileViewController: UIViewController {
     }
     
 
-    @IBAction func onLogout(_ sender: Any) {
-        PFUser.logOutInBackground { (error) in
-            if (error != nil) {
-                print(error.debugDescription)
-                print(error!.localizedDescription)
-            }
-        }
-        self.performSegue(withIdentifier: "logoutSegue", sender: nil)
-    }
     /*
     // MARK: - Navigation
 

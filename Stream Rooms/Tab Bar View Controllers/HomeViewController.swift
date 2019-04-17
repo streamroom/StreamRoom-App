@@ -43,18 +43,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         
         return cell
     }
-        
-    @IBAction func onLogout(_ sender: Any) {
-        PFUser.logOut()
-        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-        
-        let delegate = UIApplication.shared.delegate as! AppDelegate
-        
-        delegate.window?.rootViewController = loginViewController
-        
-    }
     
     @IBAction func onCreateStream(_ sender: Any) {
         self.performSegue(withIdentifier: "createStream", sender: nil)
