@@ -153,7 +153,7 @@ Allows the user to choose their favorite genres and artists and then suggests th
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-#UPDATE WEEK #1
+#UPDATE MILESTONE #1
 
 
 - [x] Create a login screen
@@ -173,6 +173,12 @@ Allows the user to choose their favorite genres and artists and then suggests th
 
 - [x] all options saved to the server and filtered accordingly.
 
+#UPDATE MILESTONE #2
+
+- [x] Create Streamroom view controller
+- [x] Create "Create Streamroom" view controller for user to make their own Streamroom
+- [x] Create a details view controller for Streamroom
+- [x] Push custom Streamroom class to Parse server
 
 
 https://dashboard.heroku.com/apps/obscure-journey-30297
