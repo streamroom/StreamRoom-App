@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E2D8F230477798454D01609 /* Pods_Stream_RoomsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF7EF72344D932536DAEF0E /* Pods_Stream_RoomsUITests.framework */; };
 		549F96F4D4083D31381F206F /* Pods_Stream_RoomsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48FBFBF2166E2A10D5AA7A2 /* Pods_Stream_RoomsTests.framework */; };
-		5EB3697002298BDD206D05E8 /* Pods_Stream_Rooms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9633D02289C22723A9EC2ED5 /* Pods_Stream_Rooms.framework */; };
+		5EB3697002298BDD206D05E8 /* Pods_Stream_Rooms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9633D02289C22723A9EC2ED5 /* Pods_Stream_Rooms.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		7D8460F822570C38009F4D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8460F722570C38009F4D4E /* Assets.xcassets */; };
 		7DA038232257E1D30068B386 /* RAMAnimatedTabBarController in Resources */ = {isa = PBXBuildFile; fileRef = 7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */; };
 		7DA038262259A4340068B386 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038252259A4340068B386 /* MusicViewController.swift */; };
