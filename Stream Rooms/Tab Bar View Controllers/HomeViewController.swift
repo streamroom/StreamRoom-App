@@ -9,14 +9,39 @@
 import UIKit
 import Parse
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UICollectionViewDataSource {
 
+    @IBOutlet weak var streamCollectionView: UICollectionView!
+    
+    var streamrooms: [Streamroom] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        // Do any additional setup after loading the view.
+        
+        streamCollectionView.dataSource = self
+        
+        let layout = streamCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumInteritemSpacing = 1
+        layout.minimumLineSpacing = layout.minimumInteritemSpacing
+        let cellsPerLine: CGFloat = 1
+        let interItemSpacingTotal = layout.minimumInteritemSpacing * (cellsPerLine - 1)
+        let width = (streamCollectionView.frame.size.width / cellsPerLine) - (interItemSpacingTotal / cellsPerLine)
+        layout.itemSize = CGSize(width: width, height: width * 2 / 3)
+        
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return streamrooms.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = streamCollectionView.dequeueReusableCell(withReuseIdentifier: "StreamCell", for: indexPath) as! StreamCell
+        
+        
+        
+        return cell
     }
         
     @IBAction func onLogout(_ sender: Any) {
@@ -31,7 +56,10 @@ class HomeViewController: UIViewController {
         
     }
     
-
+    @IBAction func onCreateStream(_ sender: Any) {
+        self.performSegue(withIdentifier: "createStream", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

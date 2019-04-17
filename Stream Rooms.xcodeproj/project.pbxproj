@@ -22,6 +22,12 @@
 		7DC584CE225516E1005C9E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC584CC225516E1005C9E12 /* LaunchScreen.storyboard */; };
 		7DC584D9225516E1005C9E12 /* Stream_RoomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584D8225516E1005C9E12 /* Stream_RoomsTests.swift */; };
 		7DC584E4225516E1005C9E12 /* Stream_RoomsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584E3225516E1005C9E12 /* Stream_RoomsUITests.swift */; };
+		C8C539D922661D800020C3B8 /* Streamroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539D822661D800020C3B8 /* Streamroom.swift */; };
+		C8C539DC22662FFD0020C3B8 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539DB22662FFD0020C3B8 /* Artist.swift */; };
+		C8C539DE2266300F0020C3B8 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539DD2266300F0020C3B8 /* Genre.swift */; };
+		C8C539E32266B4B60020C3B8 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539E22266B4B60020C3B8 /* StreamCell.swift */; };
+		C8C6C3862266BB4F0078BB50 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C3852266BB4F0078BB50 /* StreamViewController.swift */; };
+		C8C6C3882266C5E40078BB50 /* CreateStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C3872266C5E40078BB50 /* CreateStreamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		7DC584E5225516E1005C9E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9633D02289C22723A9EC2ED5 /* Pods_Stream_Rooms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_Rooms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9555BFD689FCD0D9D539A12 /* Pods-Stream RoomsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsUITests/Pods-Stream RoomsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8C539D822661D800020C3B8 /* Streamroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streamroom.swift; sourceTree = "<group>"; };
+		C8C539DB22662FFD0020C3B8 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		C8C539DD2266300F0020C3B8 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		C8C539E22266B4B60020C3B8 /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
+		C8C6C3852266BB4F0078BB50 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		C8C6C3872266C5E40078BB50 /* CreateStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStreamViewController.swift; sourceTree = "<group>"; };
 		DDB026F9B7CC6B8185B14DE9 /* Pods-Stream RoomsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsTests/Pods-Stream RoomsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E48FBFBF2166E2A10D5AA7A2 /* Pods_Stream_RoomsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_RoomsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +118,8 @@
 				7DA038252259A4340068B386 /* MusicViewController.swift */,
 				7DA038272259A4460068B386 /* SettingsViewController.swift */,
 				7DA038292259A4510068B386 /* ProfileViewController.swift */,
+				C8C6C3852266BB4F0078BB50 /* StreamViewController.swift */,
+				C8C6C3872266C5E40078BB50 /* CreateStreamViewController.swift */,
 			);
 			path = "Tab Bar View Controllers";
 			sourceTree = "<group>";
@@ -135,6 +149,7 @@
 		7DC584C2225516DE005C9E12 /* Stream Rooms */ = {
 			isa = PBXGroup;
 			children = (
+				C8C539E12266B4730020C3B8 /* Views */,
 				7DA038242259A3E60068B386 /* Tab Bar View Controllers */,
 				7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */,
 				7DC584C3225516DE005C9E12 /* AppDelegate.swift */,
@@ -143,6 +158,7 @@
 				7DC584CC225516E1005C9E12 /* LaunchScreen.storyboard */,
 				7D8460F722570C38009F4D4E /* Assets.xcassets */,
 				7DC584CF225516E1005C9E12 /* Info.plist */,
+				C8C539DA22662FD90020C3B8 /* Models */,
 			);
 			path = "Stream Rooms";
 			sourceTree = "<group>";
@@ -186,6 +202,24 @@
 				0CF7EF72344D932536DAEF0E /* Pods_Stream_RoomsUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8C539DA22662FD90020C3B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8C539D822661D800020C3B8 /* Streamroom.swift */,
+				C8C539DB22662FFD0020C3B8 /* Artist.swift */,
+				C8C539DD2266300F0020C3B8 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8C539E12266B4730020C3B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8C539E22266B4B60020C3B8 /* StreamCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,12 +453,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C539DE2266300F0020C3B8 /* Genre.swift in Sources */,
 				7DA0382C225A90E80068B386 /* LoginViewController.swift in Sources */,
+				C8C6C3862266BB4F0078BB50 /* StreamViewController.swift in Sources */,
 				7DA0382A2259A4510068B386 /* ProfileViewController.swift in Sources */,
 				7DA038262259A4340068B386 /* MusicViewController.swift in Sources */,
 				7DC584C4225516DE005C9E12 /* AppDelegate.swift in Sources */,
 				7DA038282259A4460068B386 /* SettingsViewController.swift in Sources */,
 				7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */,
+				C8C6C3882266C5E40078BB50 /* CreateStreamViewController.swift in Sources */,
+				C8C539DC22662FFD0020C3B8 /* Artist.swift in Sources */,
+				C8C539D922661D800020C3B8 /* Streamroom.swift in Sources */,
+				C8C539E32266B4B60020C3B8 /* StreamCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-994" y="27"/>
+            <point key="canvasLocation" x="-510" y="27"/>
         </scene>
         <!--Music-->
         <scene sceneID="Xtf-i2-7gR">
@@ -185,7 +185,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="3100" y="-349"/>
+            <point key="canvasLocation" x="4010.144927536232" y="-349.55357142857139"/>
         </scene>
         <!--Home-->
         <scene sceneID="z8C-PT-iqU">
@@ -194,14 +194,43 @@
                     <view key="view" contentMode="scaleToFill" id="iaZ-EX-XQr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Du-zQ-Xk6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KBq-r6-yfq">
+                                    <size key="itemSize" width="414" height="206"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StreamCell" id="bOM-9r-ihY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QIy-e5-nUS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="home_icon" id="dVI-cd-xub" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
-                        <connections>
-                            <outlet property="animation" destination="8Ti-zC-10h" id="B7I-ut-3ib"/>
-                        </connections>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="b8W-hz-LAf">
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="GbN-h5-xkQ">
+                            <connections>
+                                <action selector="onCreateStream:" destination="5Ph-Of-4OR" id="zbK-uQ-tHe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="streamCollectionView" destination="0Du-zQ-Xk6" id="rcN-70-K4S"/>
+                        <segue destination="zXy-bf-kcR" kind="presentation" identifier="createStream" id="7kl-X8-oiS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZf-Gx-ir3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="8Ti-zC-10h" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
@@ -215,7 +244,111 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="2161" y="-349"/>
+            <point key="canvasLocation" x="2482.608695652174" y="-577.23214285714278"/>
+        </scene>
+        <!--Stream View Controller-->
+        <scene sceneID="fDh-1V-ru5">
+            <objects>
+                <viewController id="c0M-lL-T0j" customClass="StreamViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ac9-nd-Jyx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dK4-1V-v0H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDj-gI-oFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3522" y="-1341"/>
+        </scene>
+        <!--Create Stream View Controller-->
+        <scene sceneID="dTs-7d-kke">
+            <objects>
+                <viewController id="zXy-bf-kcR" customClass="CreateStreamViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bIN-UW-9eV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFz-Pc-9aM">
+                                <rect key="frame" x="107" y="120" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="a42-l4-ti4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wuj-ez-gBE">
+                                <rect key="frame" x="10" y="226" width="394" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wuj-ez-gBE" secondAttribute="height" multiplier="4:2" id="gcO-rR-Hv5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mG-g7-6XO">
+                                <rect key="frame" x="190.5" y="94" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNO-Bg-ael">
+                                <rect key="frame" x="183.5" y="200" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZA-WM-fcG">
+                                <rect key="frame" x="180.5" y="523" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKi-jx-Kes">
+                                <rect key="frame" x="132" y="655" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.67441987989999996" green="0.77484107020000004" blue="0.66273057459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j7g-mf-kmL"/>
+                                    <constraint firstAttribute="width" constant="150" id="zxC-2z-TFR"/>
+                                </constraints>
+                                <state key="normal" title="Create Streamroom"/>
+                                <connections>
+                                    <action selector="onCreate:" destination="zXy-bf-kcR" eventType="touchUpInside" id="iXk-6P-U8T"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebs-n5-tai">
+                                <rect key="frame" x="182.5" y="549" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0mG-g7-6XO" firstAttribute="top" secondItem="nx3-0q-NkN" secondAttribute="top" constant="50" id="2qa-Eq-ny4"/>
+                            <constraint firstItem="nx3-0q-NkN" firstAttribute="trailing" secondItem="wuj-ez-gBE" secondAttribute="trailing" constant="10" id="5XO-rL-zcJ"/>
+                            <constraint firstItem="wuj-ez-gBE" firstAttribute="centerX" secondItem="nx3-0q-NkN" secondAttribute="centerX" id="6Rb-Si-0Kl"/>
+                            <constraint firstItem="qZA-WM-fcG" firstAttribute="centerX" secondItem="nx3-0q-NkN" secondAttribute="centerX" id="DvI-nF-wv3"/>
+                            <constraint firstItem="hNO-Bg-ael" firstAttribute="top" secondItem="xFz-Pc-9aM" secondAttribute="bottom" constant="50" id="MPM-Db-r7f"/>
+                            <constraint firstItem="wuj-ez-gBE" firstAttribute="leading" secondItem="nx3-0q-NkN" secondAttribute="leading" constant="10" id="Yle-iS-RqN"/>
+                            <constraint firstItem="qZA-WM-fcG" firstAttribute="top" secondItem="wuj-ez-gBE" secondAttribute="bottom" constant="100" id="aCW-sk-Aek"/>
+                            <constraint firstItem="wKi-jx-Kes" firstAttribute="centerX" secondItem="nx3-0q-NkN" secondAttribute="centerX" id="dFn-5U-Z7e"/>
+                            <constraint firstItem="ebs-n5-tai" firstAttribute="centerX" secondItem="nx3-0q-NkN" secondAttribute="centerX" id="nhB-ff-ENi"/>
+                            <constraint firstItem="wuj-ez-gBE" firstAttribute="top" secondItem="hNO-Bg-ael" secondAttribute="bottom" constant="5" id="qk7-Fp-kI7"/>
+                            <constraint firstItem="xFz-Pc-9aM" firstAttribute="top" secondItem="0mG-g7-6XO" secondAttribute="bottom" constant="5" id="tgV-dc-AWq"/>
+                            <constraint firstItem="xFz-Pc-9aM" firstAttribute="centerX" secondItem="nx3-0q-NkN" secondAttribute="centerX" id="tnG-ar-Pdb"/>
+                            <constraint firstItem="wKi-jx-Kes" firstAttribute="top" secondItem="ebs-n5-tai" secondAttribute="bottom" constant="75" id="vOK-h4-1It"/>
+                            <constraint firstItem="0mG-g7-6XO" firstAttribute="centerX" secondItem="bIN-UW-9eV" secondAttribute="centerX" id="wY1-Hy-634"/>
+                            <constraint firstItem="ebs-n5-tai" firstAttribute="top" secondItem="qZA-WM-fcG" secondAttribute="bottom" constant="5" id="x8G-MF-oL0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nx3-0q-NkN"/>
+                    </view>
+                    <connections>
+                        <outlet property="createStreamroomButton" destination="wKi-jx-Kes" id="e8B-Fi-TTg"/>
+                        <outlet property="imagePicker" destination="wuj-ez-gBE" id="aRb-iY-g1H"/>
+                        <outlet property="privacySwitch" destination="ebs-n5-tai" id="WiB-7e-2G3"/>
+                        <outlet property="titleInput" destination="xFz-Pc-9aM" id="whp-YK-XfL"/>
+                        <segue destination="OoB-5j-dri" kind="presentation" identifier="createToHome" id="hfz-RX-Ccw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCn-o8-rO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2482.608695652174" y="-1341.2946428571429"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="JaT-b8-HRq">
@@ -226,7 +359,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5Ph-Of-4OR" kind="relationship" relationship="viewControllers" id="L83-mx-b6b"/>
+                        <segue destination="OoB-5j-dri" kind="relationship" relationship="viewControllers" id="L83-mx-b6b"/>
                         <segue destination="aJi-YB-BFa" kind="relationship" relationship="viewControllers" id="jmB-FE-sPv"/>
                         <segue destination="1EB-DK-ZJq" kind="relationship" relationship="viewControllers" id="cJ4-22-OdN"/>
                         <segue destination="JKY-0y-oKr" kind="relationship" relationship="viewControllers" id="LYB-dr-oAB"/>
@@ -234,7 +367,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5E-dV-5QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="27"/>
+            <point key="canvasLocation" x="406" y="27"/>
         </scene>
         <!--Settings-->
         <scene sceneID="oOZ-3l-oGa">
@@ -296,6 +429,29 @@
             </objects>
             <point key="canvasLocation" x="3055" y="402"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9TZ-IW-AEU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OoB-5j-dri" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="home_icon" id="dVI-cd-xub" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="8Ti-zC-10h" id="B7I-ut-3ib"/>
+                        </connections>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZOw-Be-5Sa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Ph-Of-4OR" kind="relationship" relationship="rootViewController" id="kI9-cX-I1K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yh-Ru-Zae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="-577"/>
+        </scene>
     </scenes>
     <resources>
         <image name="home_icon" width="30" height="30"/>
@@ -305,4 +461,7 @@
         <image name="setting-567-722008" width="30" height="30"/>
         <image name="username" width="480" height="480"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hfz-RX-Ccw"/>
+    </inferredMetricsTieBreakers>
 </document>
