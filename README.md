@@ -180,6 +180,12 @@ Allows the user to choose their favorite genres and artists and then suggests th
 - [x] Create a details view controller for Streamroom
 - [x] Push custom Streamroom class to Parse server
 
+#UPDATE MILESTONE #3
+
+- [x] Create chat ViewController
+- [x] Create UserPage ViewController
+- [x] Create home ViewController
+- [x] add the required functionality for all.
 
 https://dashboard.heroku.com/apps/obscure-journey-30297
 
