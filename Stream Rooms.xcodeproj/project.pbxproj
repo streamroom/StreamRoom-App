@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		457FD696ACB6B0119DC53145 /* Pods_Stream_Rooms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132719C592C78D3EEFE5799B /* Pods_Stream_Rooms.framework */; };
 		7D8460F822570C38009F4D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8460F722570C38009F4D4E /* Assets.xcassets */; };
 		7DA038232257E1D30068B386 /* RAMAnimatedTabBarController in Resources */ = {isa = PBXBuildFile; fileRef = 7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */; };
 		7DA038262259A4340068B386 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038252259A4340068B386 /* MusicViewController.swift */; };
@@ -20,14 +19,20 @@
 		7DC584CE225516E1005C9E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC584CC225516E1005C9E12 /* LaunchScreen.storyboard */; };
 		7DC584D9225516E1005C9E12 /* Stream_RoomsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584D8225516E1005C9E12 /* Stream_RoomsTests.swift */; };
 		7DC584E4225516E1005C9E12 /* Stream_RoomsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584E3225516E1005C9E12 /* Stream_RoomsUITests.swift */; };
-		95B2A65E979E741620C2810C /* Pods_Stream_RoomsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802DFE493827A9C409DD1887 /* Pods_Stream_RoomsUITests.framework */; };
-		B550E40D85B8D272268AE321 /* Pods_Stream_RoomsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EFEBDDD972AA794F371159 /* Pods_Stream_RoomsTests.framework */; };
+		7E720DAE343CFA2B1071F663 /* Pods_Stream_RoomsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3713A875006B78FC6D02E87A /* Pods_Stream_RoomsTests.framework */; };
+		B45D15CCD9120E478130A590 /* Pods_Stream_Rooms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912165A8800F3F29440A9087 /* Pods_Stream_Rooms.framework */; };
+		C855B0A0226F18E200A67B2E /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C855B09F226F18E200A67B2E /* SpotifyiOS.framework */; };
+		C855B0A6226F22BF00A67B2E /* genreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0A5226F22BF00A67B2E /* genreSelections.swift */; };
+		C855B0AA226F248D00A67B2E /* GenreSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0A9226F248D00A67B2E /* GenreSelectViewController.swift */; };
+		C855B0AC226F2E9600A67B2E /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0AB226F2E9600A67B2E /* GenreCell.swift */; };
+		C855B0AE226F5FA300A67B2E /* ArtistSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0AD226F5FA300A67B2E /* ArtistSelectViewController.swift */; };
 		C8C539D922661D800020C3B8 /* Streamroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539D822661D800020C3B8 /* Streamroom.swift */; };
 		C8C539DC22662FFD0020C3B8 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539DB22662FFD0020C3B8 /* Artist.swift */; };
 		C8C539DE2266300F0020C3B8 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539DD2266300F0020C3B8 /* Genre.swift */; };
 		C8C539E32266B4B60020C3B8 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C539E22266B4B60020C3B8 /* StreamCell.swift */; };
 		C8C6C3862266BB4F0078BB50 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C3852266BB4F0078BB50 /* StreamViewController.swift */; };
 		C8C6C3882266C5E40078BB50 /* CreateStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6C3872266C5E40078BB50 /* CreateStreamViewController.swift */; };
+		FC3175A4600FC00BB568788E /* Pods_Stream_RoomsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4117C0864CC6865C625666 /* Pods_Stream_RoomsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		132719C592C78D3EEFE5799B /* Pods_Stream_Rooms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_Rooms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EA149B5E3E2363C85942767 /* Pods-Stream Rooms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream Rooms.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms.release.xcconfig"; sourceTree = "<group>"; };
-		77B0808A1FBECEECF97CCF5E /* Pods-Stream RoomsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsTests/Pods-Stream RoomsTests.release.xcconfig"; sourceTree = "<group>"; };
+		10D2D7718DCE6491849F3400 /* Pods-Stream Rooms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream Rooms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms.debug.xcconfig"; sourceTree = "<group>"; };
+		172257E7DF0426C1363F232E /* Pods-Stream RoomsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsTests/Pods-Stream RoomsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3713A875006B78FC6D02E87A /* Pods_Stream_RoomsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_RoomsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4117C0864CC6865C625666 /* Pods_Stream_RoomsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_RoomsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC8E52B628B4A72FF743A77 /* Pods-Stream RoomsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsUITests/Pods-Stream RoomsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		79A571CEB9FC7209DFDD2E64 /* Pods-Stream RoomsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsTests/Pods-Stream RoomsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D624D92226797B0003C4A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7D8460F722570C38009F4D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RAMAnimatedTabBarController; path = "../../animated-tab-bar/RAMAnimatedTabBarController"; sourceTree = "<group>"; };
@@ -70,18 +78,21 @@
 		7DC584DF225516E1005C9E12 /* Stream RoomsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stream RoomsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC584E3225516E1005C9E12 /* Stream_RoomsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream_RoomsUITests.swift; sourceTree = "<group>"; };
 		7DC584E5225516E1005C9E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		802DFE493827A9C409DD1887 /* Pods_Stream_RoomsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_RoomsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B54257889C6692934AF3DBED /* Pods-Stream RoomsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsTests/Pods-Stream RoomsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B9EFEBDDD972AA794F371159 /* Pods_Stream_RoomsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_RoomsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912165A8800F3F29440A9087 /* Pods_Stream_Rooms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_Rooms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB13B10D5D296E7D833B22D5 /* Pods-Stream RoomsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsUITests/Pods-Stream RoomsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C855B09F226F18E200A67B2E /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		C855B0A1226F195B00A67B2E /* Stream Rooms-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stream Rooms-Bridging-Header.h"; sourceTree = "<group>"; };
+		C855B0A5226F22BF00A67B2E /* genreSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genreSelections.swift; sourceTree = "<group>"; };
+		C855B0A9226F248D00A67B2E /* GenreSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectViewController.swift; sourceTree = "<group>"; };
+		C855B0AB226F2E9600A67B2E /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
+		C855B0AD226F5FA300A67B2E /* ArtistSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSelectViewController.swift; sourceTree = "<group>"; };
 		C8C539D822661D800020C3B8 /* Streamroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streamroom.swift; sourceTree = "<group>"; };
 		C8C539DB22662FFD0020C3B8 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		C8C539DD2266300F0020C3B8 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		C8C539E22266B4B60020C3B8 /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
 		C8C6C3852266BB4F0078BB50 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 		C8C6C3872266C5E40078BB50 /* CreateStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStreamViewController.swift; sourceTree = "<group>"; };
-		D8AE36831302D18884197CC4 /* Pods-Stream RoomsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsUITests/Pods-Stream RoomsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DE9DFB9CEF659F35200F8C0C /* Pods-Stream Rooms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream Rooms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms.debug.xcconfig"; sourceTree = "<group>"; };
-		FB182795B0EAA00F241E1614 /* Pods-Stream RoomsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream RoomsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stream RoomsUITests/Pods-Stream RoomsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D678A919717C973811F9D710 /* Pods-Stream Rooms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stream Rooms.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457FD696ACB6B0119DC53145 /* Pods_Stream_Rooms.framework in Frameworks */,
+				C855B0A0226F18E200A67B2E /* SpotifyiOS.framework in Frameworks */,
+				B45D15CCD9120E478130A590 /* Pods_Stream_Rooms.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B550E40D85B8D272268AE321 /* Pods_Stream_RoomsTests.framework in Frameworks */,
+				7E720DAE343CFA2B1071F663 /* Pods_Stream_RoomsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,27 +117,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95B2A65E979E741620C2810C /* Pods_Stream_RoomsUITests.framework in Frameworks */,
+				FC3175A4600FC00BB568788E /* Pods_Stream_RoomsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CFC63DFD695B7C053F6C51A /* Pods */ = {
+		4E10E083C16879E175C8EE54 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DE9DFB9CEF659F35200F8C0C /* Pods-Stream Rooms.debug.xcconfig */,
-				5EA149B5E3E2363C85942767 /* Pods-Stream Rooms.release.xcconfig */,
-				B54257889C6692934AF3DBED /* Pods-Stream RoomsTests.debug.xcconfig */,
-				77B0808A1FBECEECF97CCF5E /* Pods-Stream RoomsTests.release.xcconfig */,
-				FB182795B0EAA00F241E1614 /* Pods-Stream RoomsUITests.debug.xcconfig */,
-				D8AE36831302D18884197CC4 /* Pods-Stream RoomsUITests.release.xcconfig */,
+				10D2D7718DCE6491849F3400 /* Pods-Stream Rooms.debug.xcconfig */,
+				D678A919717C973811F9D710 /* Pods-Stream Rooms.release.xcconfig */,
+				172257E7DF0426C1363F232E /* Pods-Stream RoomsTests.debug.xcconfig */,
+				79A571CEB9FC7209DFDD2E64 /* Pods-Stream RoomsTests.release.xcconfig */,
+				6CC8E52B628B4A72FF743A77 /* Pods-Stream RoomsUITests.debug.xcconfig */,
+				BB13B10D5D296E7D833B22D5 /* Pods-Stream RoomsUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7DA038242259A3E60068B386 /* Tab Bar View Controllers */ = {
+		7DA038242259A3E60068B386 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				7DB9A87F22568A33008B61DD /* HomeViewController.swift */,
@@ -134,8 +146,10 @@
 				7DA038292259A4510068B386 /* ProfileViewController.swift */,
 				C8C6C3852266BB4F0078BB50 /* StreamViewController.swift */,
 				C8C6C3872266C5E40078BB50 /* CreateStreamViewController.swift */,
+				C855B0A9226F248D00A67B2E /* GenreSelectViewController.swift */,
+				C855B0AD226F5FA300A67B2E /* ArtistSelectViewController.swift */,
 			);
-			path = "Tab Bar View Controllers";
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		7DC584B7225516DE005C9E12 = {
@@ -146,7 +160,8 @@
 				7DC584E2225516E1005C9E12 /* Stream RoomsUITests */,
 				7DC584C1225516DE005C9E12 /* Products */,
 				952896919B7AB36CC60DE0B0 /* Frameworks */,
-				0CFC63DFD695B7C053F6C51A /* Pods */,
+				C855B0A1226F195B00A67B2E /* Stream Rooms-Bridging-Header.h */,
+				4E10E083C16879E175C8EE54 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				C8C539E12266B4730020C3B8 /* Views */,
-				7DA038242259A3E60068B386 /* Tab Bar View Controllers */,
+				7DA038242259A3E60068B386 /* View Controllers */,
 				7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */,
 				7DC584C3225516DE005C9E12 /* AppDelegate.swift */,
 				7DA0382B225A90E80068B386 /* LoginViewController.swift */,
@@ -173,6 +188,7 @@
 				7D8460F722570C38009F4D4E /* Assets.xcassets */,
 				7DC584CF225516E1005C9E12 /* Info.plist */,
 				C8C539DA22662FD90020C3B8 /* Models */,
+				C855B0A5226F22BF00A67B2E /* genreSelections.swift */,
 			);
 			path = "Stream Rooms";
 			sourceTree = "<group>";
@@ -198,10 +214,11 @@
 		952896919B7AB36CC60DE0B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C855B09F226F18E200A67B2E /* SpotifyiOS.framework */,
 				7D624D92226797B0003C4A2E /* Foundation.framework */,
-				132719C592C78D3EEFE5799B /* Pods_Stream_Rooms.framework */,
-				B9EFEBDDD972AA794F371159 /* Pods_Stream_RoomsTests.framework */,
-				802DFE493827A9C409DD1887 /* Pods_Stream_RoomsUITests.framework */,
+				912165A8800F3F29440A9087 /* Pods_Stream_Rooms.framework */,
+				3713A875006B78FC6D02E87A /* Pods_Stream_RoomsTests.framework */,
+				5E4117C0864CC6865C625666 /* Pods_Stream_RoomsUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				C8C539E22266B4B60020C3B8 /* StreamCell.swift */,
+				C855B0AB226F2E9600A67B2E /* GenreCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,11 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DC584E8225516E1005C9E12 /* Build configuration list for PBXNativeTarget "Stream Rooms" */;
 			buildPhases = (
-				9A9B7DE05C423EC6ECAFAD3B /* [CP] Check Pods Manifest.lock */,
+				E8A53A1B4A5BB642BBA7F1ED /* [CP] Check Pods Manifest.lock */,
 				7DC584BC225516DE005C9E12 /* Sources */,
 				7DC584BD225516DE005C9E12 /* Frameworks */,
 				7DC584BE225516DE005C9E12 /* Resources */,
-				39E59BC801E4A435B802E3FD /* [CP] Embed Pods Frameworks */,
+				7D06A49334A8DD325FCC9C4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,7 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DC584EB225516E1005C9E12 /* Build configuration list for PBXNativeTarget "Stream RoomsTests" */;
 			buildPhases = (
-				B3EA27DEB10DFFFEB9B45D88 /* [CP] Check Pods Manifest.lock */,
+				E18150093EB434E14C65BB6B /* [CP] Check Pods Manifest.lock */,
 				7DC584D0225516E1005C9E12 /* Sources */,
 				7DC584D1225516E1005C9E12 /* Frameworks */,
 				7DC584D2225516E1005C9E12 /* Resources */,
@@ -269,7 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DC584EE225516E1005C9E12 /* Build configuration list for PBXNativeTarget "Stream RoomsUITests" */;
 			buildPhases = (
-				29026FAEA37DEF5D24CC6197 /* [CP] Check Pods Manifest.lock */,
+				FB59F9E22DD7D65DF50B489A /* [CP] Check Pods Manifest.lock */,
 				7DC584DB225516E1005C9E12 /* Sources */,
 				7DC584DC225516E1005C9E12 /* Frameworks */,
 				7DC584DD225516E1005C9E12 /* Resources */,
@@ -296,6 +314,7 @@
 				TargetAttributes = {
 					7DC584BF225516DE005C9E12 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					7DC584D3225516E1005C9E12 = {
 						CreatedOnToolsVersion = 10.1;
@@ -356,29 +375,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29026FAEA37DEF5D24CC6197 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Stream RoomsUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39E59BC801E4A435B802E3FD /* [CP] Embed Pods Frameworks */ = {
+		7D06A49334A8DD325FCC9C4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,7 +384,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 			);
@@ -395,7 +394,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 			);
@@ -404,29 +405,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stream Rooms/Pods-Stream Rooms-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A9B7DE05C423EC6ECAFAD3B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Stream Rooms-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3EA27DEB10DFFFEB9B45D88 /* [CP] Check Pods Manifest.lock */ = {
+		E18150093EB434E14C65BB6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,6 +427,50 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E8A53A1B4A5BB642BBA7F1ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stream Rooms-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB59F9E22DD7D65DF50B489A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stream RoomsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,12 +478,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C855B0AA226F248D00A67B2E /* GenreSelectViewController.swift in Sources */,
 				C8C539DE2266300F0020C3B8 /* Genre.swift in Sources */,
+				C855B0AE226F5FA300A67B2E /* ArtistSelectViewController.swift in Sources */,
 				7DA0382C225A90E80068B386 /* LoginViewController.swift in Sources */,
 				C8C6C3862266BB4F0078BB50 /* StreamViewController.swift in Sources */,
+				C855B0A6226F22BF00A67B2E /* genreSelections.swift in Sources */,
 				7DA0382A2259A4510068B386 /* ProfileViewController.swift in Sources */,
 				7DA038262259A4340068B386 /* MusicViewController.swift in Sources */,
 				7DC584C4225516DE005C9E12 /* AppDelegate.swift in Sources */,
+				C855B0AC226F2E9600A67B2E /* GenreCell.swift in Sources */,
 				7DA038282259A4460068B386 /* SettingsViewController.swift in Sources */,
 				7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */,
 				C8C6C3882266C5E40078BB50 /* CreateStreamViewController.swift in Sources */,
@@ -639,17 +666,34 @@
 		};
 		7DC584E9225516E1005C9E12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE9DFB9CEF659F35200F8C0C /* Pods-Stream Rooms.debug.xcconfig */;
+			baseConfigurationReference = 10D2D7718DCE6491849F3400 /* Pods-Stream Rooms.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Stream Rooms/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"Parse\"",
+					"-framework",
+					"\"RAMAnimatedTabBarController\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Stream-Rooms.Stream-Rooms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stream Rooms-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -657,17 +701,33 @@
 		};
 		7DC584EA225516E1005C9E12 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EA149B5E3E2363C85942767 /* Pods-Stream Rooms.release.xcconfig */;
+			baseConfigurationReference = D678A919717C973811F9D710 /* Pods-Stream Rooms.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Stream Rooms/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"Parse\"",
+					"-framework",
+					"\"RAMAnimatedTabBarController\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Stream-Rooms.Stream-Rooms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stream Rooms-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -675,7 +735,7 @@
 		};
 		7DC584EC225516E1005C9E12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B54257889C6692934AF3DBED /* Pods-Stream RoomsTests.debug.xcconfig */;
+			baseConfigurationReference = 172257E7DF0426C1363F232E /* Pods-Stream RoomsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -696,7 +756,7 @@
 		};
 		7DC584ED225516E1005C9E12 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77B0808A1FBECEECF97CCF5E /* Pods-Stream RoomsTests.release.xcconfig */;
+			baseConfigurationReference = 79A571CEB9FC7209DFDD2E64 /* Pods-Stream RoomsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -717,7 +777,7 @@
 		};
 		7DC584EF225516E1005C9E12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB182795B0EAA00F241E1614 /* Pods-Stream RoomsUITests.debug.xcconfig */;
+			baseConfigurationReference = 6CC8E52B628B4A72FF743A77 /* Pods-Stream RoomsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -737,7 +797,7 @@
 		};
 		7DC584F0225516E1005C9E12 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8AE36831302D18884197CC4 /* Pods-Stream RoomsUITests.release.xcconfig */;
+			baseConfigurationReference = BB13B10D5D296E7D833B22D5 /* Pods-Stream RoomsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

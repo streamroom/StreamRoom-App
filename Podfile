@@ -8,6 +8,8 @@ target 'Stream Rooms' do
   # Pods for Stream Rooms
 	pod 'Parse'
  	pod 'RAMAnimatedTabBarController'
+	pod 'PMSuperButton'
+	pod 'Alamofire'
 
   target 'Stream RoomsTests' do
     inherit! :search_paths

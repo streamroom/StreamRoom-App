@@ -1,26 +1,34 @@
 PODS:
+  - Alamofire (4.8.2)
   - Bolts/Tasks (1.9.0)
   - Parse (1.17.2):
     - Parse/Core (= 1.17.2)
   - Parse/Core (1.17.2):
     - Bolts/Tasks (~> 1.9)
+  - PMSuperButton (3.0.1)
   - RAMAnimatedTabBarController (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Parse
+  - PMSuperButton
   - RAMAnimatedTabBarController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Bolts
     - Parse
+    - PMSuperButton
     - RAMAnimatedTabBarController
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
+  PMSuperButton: 2bef6f8659a5df969a69887f496ef309480c65eb
   RAMAnimatedTabBarController: 6736db7bec2ec74d64059ee9cb40cb9bd281338e
 
-PODFILE CHECKSUM: 18373e9a97ea358d810c8581f961633817924c7a
+PODFILE CHECKSUM: 1cff30325bf3fc607ee3c1d12f171d519b7cf6c3
 
 COCOAPODS: 1.5.3

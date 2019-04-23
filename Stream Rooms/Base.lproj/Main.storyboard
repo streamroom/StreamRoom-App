@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -151,6 +151,7 @@
                         <outlet property="registerButton" destination="qtd-jY-MgM" id="j21-X9-x4W"/>
                         <outlet property="usernameField" destination="0yL-J6-iiC" id="qDd-SD-4x7"/>
                         <segue destination="M89-hd-nCs" kind="show" identifier="loginSegue" id="str-gT-q9h"/>
+                        <segue destination="EZT-7d-Ivs" kind="presentation" identifier="newUser" id="kOn-TF-ADh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -648,66 +649,138 @@
             </objects>
             <point key="canvasLocation" x="1678" y="-577"/>
         </scene>
-        <!--View Controller-->
+        <!--Genre Select View Controller-->
         <scene sceneID="4zU-BY-xoq">
             <objects>
-                <viewController id="EZT-7d-Ivs" sceneMemberID="viewController">
+                <viewController id="EZT-7d-Ivs" customClass="GenreSelectViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBs-At-VPr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your favorite genre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs3-VD-rMp">
-                                <rect key="frame" x="20" y="103" width="374" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26431187989999999" green="0.56185072660000002" blue="0.49803841110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hJC-rQ-95P">
-                                <rect key="frame" x="20" y="236" width="374" height="451"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv5-V3-4El" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="20" y="778" width="374" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" red="0.2901960784" green="0.56470588239999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" red="0.50790319709999998" green="0.77467424409999996" blue="0.86383146050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KED-Eg-esT">
+                                <rect key="frame" x="10" y="206" width="394" height="571"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="ESZ-Id-Olb">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ESZ-Id-Olb" id="uCK-LR-aCv">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="69.5"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ap1-7z-NBp">
+                                    <size key="itemSize" width="209" height="240"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GenreCell" id="3X6-EQ-cK8" customClass="GenreCell" customModule="Stream_Rooms" customModuleProvider="target">
+                                        <rect key="frame" x="92.5" y="0.0" width="209" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="209" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3h-cH-2fo">
-                                                    <rect key="frame" x="20" y="15" width="334" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="BUtton representing genre chosen"/>
-                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z7P-tW-ekL">
+                                                    <rect key="frame" x="0.0" y="5" width="209" height="209"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="z7P-tW-ekL" secondAttribute="height" multiplier="1:1" id="ULr-mU-3UP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxg-lN-K0B">
+                                                    <rect key="frame" x="82.5" y="219" width="44" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="Khr-S9-AWu">
+                                                    <rect key="frame" x="169" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Khr-S9-AWu" secondAttribute="height" multiplier="1:1" id="7bX-XP-2Pz"/>
+                                                        <constraint firstAttribute="height" constant="40" id="v4J-0U-21W"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv5-V3-4El">
-                                <rect key="frame" x="20" y="696" width="374" height="166"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="Next: Artist (button)"/>
-                            </button>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="rxg-lN-K0B" firstAttribute="top" secondItem="z7P-tW-ekL" secondAttribute="bottom" constant="5" id="GPA-dg-dQc"/>
+                                            <constraint firstItem="z7P-tW-ekL" firstAttribute="leading" secondItem="3X6-EQ-cK8" secondAttribute="leading" id="Hvv-jY-TVm"/>
+                                            <constraint firstAttribute="bottom" secondItem="rxg-lN-K0B" secondAttribute="bottom" id="Nof-69-rfJ"/>
+                                            <constraint firstItem="rxg-lN-K0B" firstAttribute="centerX" secondItem="3X6-EQ-cK8" secondAttribute="centerX" id="gci-W7-GYO"/>
+                                            <constraint firstItem="z7P-tW-ekL" firstAttribute="centerX" secondItem="3X6-EQ-cK8" secondAttribute="centerX" id="llT-Di-WlU"/>
+                                            <constraint firstItem="Khr-S9-AWu" firstAttribute="trailing" secondItem="z7P-tW-ekL" secondAttribute="trailing" id="mVq-qf-yBa"/>
+                                            <constraint firstItem="Khr-S9-AWu" firstAttribute="top" secondItem="z7P-tW-ekL" secondAttribute="top" id="w4P-m6-7he"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="checkbox" destination="Khr-S9-AWu" id="DB5-Bi-9BC"/>
+                                            <outlet property="genreImage" destination="z7P-tW-ekL" id="ej7-Un-mut"/>
+                                            <outlet property="genreLabel" destination="rxg-lN-K0B" id="mem-hM-SM1"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your favorite genres:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwc-d3-JvR">
+                                <rect key="frame" x="20" y="94" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymm-pt-KwH">
+                                <rect key="frame" x="347" y="160" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bxr-pz-4Pz" firstAttribute="trailing" secondItem="Ymm-pt-KwH" secondAttribute="trailing" constant="20" id="05p-dq-llR"/>
+                            <constraint firstItem="bxr-pz-4Pz" firstAttribute="trailing" secondItem="KED-Eg-esT" secondAttribute="trailing" constant="10" id="0ya-Zz-grl"/>
+                            <constraint firstItem="Pv5-V3-4El" firstAttribute="leading" secondItem="bxr-pz-4Pz" secondAttribute="leading" constant="20" id="7Ok-D6-5o7"/>
+                            <constraint firstItem="bxr-pz-4Pz" firstAttribute="trailing" secondItem="Nwc-d3-JvR" secondAttribute="trailing" constant="20" id="82H-yJ-LcN"/>
+                            <constraint firstItem="Nwc-d3-JvR" firstAttribute="top" secondItem="bxr-pz-4Pz" secondAttribute="top" constant="50" id="8Yo-1Z-AiR"/>
+                            <constraint firstItem="KED-Eg-esT" firstAttribute="leading" secondItem="bxr-pz-4Pz" secondAttribute="leading" constant="10" id="RKQ-Gr-rS9"/>
+                            <constraint firstItem="Ymm-pt-KwH" firstAttribute="top" secondItem="Nwc-d3-JvR" secondAttribute="bottom" constant="25" id="RgG-1v-A1h"/>
+                            <constraint firstItem="KED-Eg-esT" firstAttribute="top" secondItem="Ymm-pt-KwH" secondAttribute="bottom" constant="25" id="aVi-8W-eeI"/>
+                            <constraint firstItem="bxr-pz-4Pz" firstAttribute="bottom" secondItem="Pv5-V3-4El" secondAttribute="bottom" id="pB9-6x-4MQ"/>
+                            <constraint firstItem="Pv5-V3-4El" firstAttribute="top" secondItem="KED-Eg-esT" secondAttribute="bottom" constant="25" id="q43-bD-KL5"/>
+                            <constraint firstItem="Nwc-d3-JvR" firstAttribute="leading" secondItem="bxr-pz-4Pz" secondAttribute="leading" constant="20" id="qQI-zt-aV7"/>
+                            <constraint firstItem="bxr-pz-4Pz" firstAttribute="trailing" secondItem="Pv5-V3-4El" secondAttribute="trailing" constant="20" id="rZZ-c6-HvB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bxr-pz-4Pz"/>
                     </view>
                     <connections>
-                        <segue destination="dDZ-b1-D8V" kind="presentation" id="UIG-iQ-h2S"/>
+                        <outlet property="genreView" destination="KED-Eg-esT" id="ehI-mV-DkB"/>
+                        <outlet property="nextButton" destination="Pv5-V3-4El" id="AP1-fS-Fgm"/>
+                        <outlet property="shareLabel" destination="Ymm-pt-KwH" id="yhY-NG-hAZ"/>
+                        <segue destination="dDZ-b1-D8V" kind="presentation" identifier="artistSelect" id="bdU-eH-wCq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6c3-Yg-0vO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="-1082"/>
+            <point key="canvasLocation" x="-686.95652173913049" y="-1140.4017857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Artist Select View Controller-->
         <scene sceneID="gfV-uO-gAw">
             <objects>
-                <viewController id="dDZ-b1-D8V" sceneMemberID="viewController">
+                <viewController id="dDZ-b1-D8V" customClass="ArtistSelectViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LVo-DN-GGl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -755,12 +828,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFi-Vm-A7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="-1082"/>
+            <point key="canvasLocation" x="325" y="-1140"/>
         </scene>
     </scenes>
     <resources>
         <image name="15c9751f70c0edf1785474a926f2c641" width="16" height="16"/>
         <image name="background" width="1090" height="595"/>
+        <image name="checkmark" width="512" height="512"/>
         <image name="home_icon" width="30" height="30"/>
         <image name="music_icon" width="30" height="30"/>
         <image name="password" width="848" height="980"/>
@@ -769,6 +843,6 @@
         <image name="username" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="L83-mx-b6b"/>
+        <segue reference="hfz-RX-Ccw"/>
     </inferredMetricsTieBreakers>
 </document>

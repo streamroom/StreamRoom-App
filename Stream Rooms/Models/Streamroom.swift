@@ -10,27 +10,27 @@ import Foundation
 import Parse
 
 class Streamroom: PFObject, PFSubclassing {
-    var name: String?
-    var id: UUID?
-    var owner: PFUser?
-    var image: PFFileObject?
-    var genres: [Genre]?
-    var artists: [Artist]?
-    var users: [PFUser]?
-    var isPrivate: Bool?
-    var dislikedGenres: [Genre]?
-    var dislikedArtists: [Genre]?
+    @NSManaged var name: String?
+    @NSManaged var identity: String?
+    @NSManaged var owner: PFUser?
+    @NSManaged var image: PFFileObject?
+    @NSManaged var genres: [Genre]?
+    @NSManaged var artists: [Artist]?
+    @NSManaged var users: [PFUser]?
+    @NSManaged var isPrivate: NSNumber?
+    @NSManaged var dislikedGenres: [Genre]?
+    @NSManaged var dislikedArtists: [Genre]?
     
     class func parseClassName() -> String {
         return "StreamRoom"
     }
     
-    class func createStreamroom(name: String, image: UIImage, owner: PFUser, privacy: Bool, withCompletion completion: PFBooleanResultBlock?){
+    class func createStreamroom(name: String, image: UIImage, owner: PFUser, privacy: NSNumber, withCompletion completion: PFBooleanResultBlock?){
         
         let room = Streamroom()
         
         room.name = name
-        room.id = UUID()
+        room.identity = UUID().uuidString
         room.image = getPFFileFromImage(image: image)
         room.owner = owner
         room.isPrivate = privacy
