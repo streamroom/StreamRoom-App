@@ -104,7 +104,7 @@ class GenreSelectViewController: UIViewController, UICollectionViewDataSource, U
         }
         else{
             cell.isSelected = false
-            cell.checkbox.isHidden=true
+            cell.checkbox.isHidden = true
         }
         return cell
     }

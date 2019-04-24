@@ -10,6 +10,7 @@ target 'Stream Rooms' do
  	pod 'RAMAnimatedTabBarController'
 	pod 'PMSuperButton'
 	pod 'Alamofire'
+	pod 'LTMorphingLabel'
 
   target 'Stream RoomsTests' do
     inherit! :search_paths
