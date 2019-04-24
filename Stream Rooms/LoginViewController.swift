@@ -8,37 +8,24 @@
 
 import UIKit
 import Parse
+import PMSuperButton
 
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: PMSuperButton!
+    
+    @IBOutlet weak var registerButton: PMSuperButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        assignbackground()
-    }
-    func assignbackground(){
-        let background = UIImage(named: "background")
-        
-        var imageView : UIImageView!
-        imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
-        //imageView.clipsToBounds = true
-        imageView.image = background
-        imageView.center = view.center
-        view.addSubview(imageView)
-        self.view.sendSubviewToBack(imageView)
-        roundButtons()
     }
     
+    
     func roundButtons() {
-        loginButton.layer.cornerRadius = 20
-        registerButton.layer.cornerRadius = 20
+        
     }
     
     
