@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class CreateStreamViewController: UIViewController {
+class CreateStreamViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var titleInput: UITextField!
     @IBOutlet weak var imagePicker: UIImageView!
@@ -19,9 +19,40 @@ class CreateStreamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.isUserInteractionEnabled = true
+        let pictureTap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         createStreamroomButton.layer.cornerRadius = 20
+        imagePicker.addGestureRecognizer(pictureTap)
 
     }
+    
+    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
+        chooseImage()
+    }
+    
+    func chooseImage() {
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        vc.sourceType = UIImagePickerController.SourceType.photoLibrary
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // Get the image captured by the UIImagePickerController
+        //let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        guard let editedImage = info[.editedImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        
+        imagePicker.image = editedImage
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func onCreate(_ sender: Any) {
         let streamName = titleInput.text!
@@ -36,6 +67,7 @@ class CreateStreamViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+        self.performSegue(withIdentifier: "createToHome", sender: nil)
     }
     
     /*

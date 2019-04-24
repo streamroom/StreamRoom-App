@@ -48,8 +48,6 @@ class Streamroom: PFObject, PFSubclassing {
                 
             }
         }
-        
-        
     }
     
     class func getPFFileFromImage(image: UIImage?) -> PFFileObject? {

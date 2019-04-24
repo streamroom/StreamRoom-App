@@ -31,6 +31,25 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         
     }
     
+    func getStreams() {
+        let query = Streamroom.query()
+        query?.order(byDescending: "createdAt")
+        query?.includeKey("owner")
+        query?.includeKey("createdAt")
+        query?.includeKey("image")
+        query?.limit = 20
+        
+        query?.findObjectsInBackground { (rooms ,error) in
+            if let rooms = rooms {
+                print("Posts were found!")
+                self.streamrooms = rooms as! [Streamroom]
+                self.streamCollectionView.reloadData()
+            } else {
+                print(error!.localizedDescription)
+            }
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return streamrooms.count
     }
@@ -38,8 +57,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = streamCollectionView.dequeueReusableCell(withReuseIdentifier: "StreamCell", for: indexPath) as! StreamCell
-        
-        
+        cell.stream = streamrooms[indexPath.row]
         
         return cell
     }

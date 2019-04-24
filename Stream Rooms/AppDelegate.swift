@@ -24,9 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SPTSessionManagerDelegate
     
 //    https://charmed-aries.glitch.me/api/token
 //    https://charmed-aries.glitch.me/api/refresh_token
+//    https://my-spotify-swap.herokuapp.com/api/token
+//    https://my-spotify-swap.herokuapp.com/refresh_token
     
     lazy var sessionManager: SPTSessionManager = {
-        if let tokenSwapURL = URL(string: "https://my-spotify-swap.herokuapp.com/api/token"),
+        if let tokenSwapURL = URL(string: "https://charmed-aries.glitch.me/api/refresh_token"),
             let tokenRefreshURL = URL(string: "https://my-spotify-swap.herokuapp.com/refresh_token") {
             self.configuration.tokenSwapURL = tokenSwapURL
             self.configuration.tokenRefreshURL = tokenRefreshURL
@@ -67,6 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SPTSessionManagerDelegate
     
     func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
         self.appRemote.connectionParameters.accessToken = session.accessToken
+        UserDefaults.standard.setValue(session.accessToken, forKey: "spotifyToken")
         self.appRemote.connect()
         print("success", session)
     }

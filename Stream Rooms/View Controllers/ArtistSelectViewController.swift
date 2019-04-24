@@ -72,8 +72,9 @@ class ArtistSelectViewController: UIViewController, UITableViewDataSource, UITab
         
         let artistURL = URL(string: baseURLString + genreString)!
         
-        let headers: HTTPHeaders = ["Authorization": "Bearer \(API)", "Accept": "application/json", "Content-Type": "application/json"]
+        let UAuth = UserDefaults.standard.string(forKey: "spotifyToken")
         
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(API)", "Accept": "application/json", "Content-Type": "application/json"]
         
         Alamofire.request( artistURL, headers: headers).responseJSON { response in
             guard let data = response.result.value as? [String:Any] else {

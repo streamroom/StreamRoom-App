@@ -18,7 +18,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var messageField: UITextField!
     
     
-    
     var messages: [PFObject?] = []
     var totalMessages: NSInteger = 0
     var refreshControl: UIRefreshControl!
