@@ -23,7 +23,7 @@
 		7DC584E4225516E1005C9E12 /* Stream_RoomsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC584E3225516E1005C9E12 /* Stream_RoomsUITests.swift */; };
 		90A0D32EEB412934AD4E90A6 /* Pods_Stream_RoomsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95324A89FF75F17B766DF530 /* Pods_Stream_RoomsUITests.framework */; };
 		C855B0A0226F18E200A67B2E /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C855B09F226F18E200A67B2E /* SpotifyiOS.framework */; };
-		C855B0A6226F22BF00A67B2E /* genreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0A5226F22BF00A67B2E /* genreSelections.swift */; };
+		C855B0A6226F22BF00A67B2E /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0A5226F22BF00A67B2E /* config.swift */; };
 		C855B0AA226F248D00A67B2E /* GenreSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0A9226F248D00A67B2E /* GenreSelectViewController.swift */; };
 		C855B0AC226F2E9600A67B2E /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0AB226F2E9600A67B2E /* GenreCell.swift */; };
 		C855B0AE226F5FA300A67B2E /* ArtistSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855B0AD226F5FA300A67B2E /* ArtistSelectViewController.swift */; };
@@ -83,7 +83,7 @@
 		C69CF2FD2D29EFCE99FBCA33 /* Pods_Stream_RoomsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_RoomsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C855B09F226F18E200A67B2E /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		C855B0A1226F195B00A67B2E /* Stream Rooms-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stream Rooms-Bridging-Header.h"; sourceTree = "<group>"; };
-		C855B0A5226F22BF00A67B2E /* genreSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genreSelections.swift; sourceTree = "<group>"; };
+		C855B0A5226F22BF00A67B2E /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		C855B0A9226F248D00A67B2E /* GenreSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectViewController.swift; sourceTree = "<group>"; };
 		C855B0AB226F2E9600A67B2E /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
 		C855B0AD226F5FA300A67B2E /* ArtistSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSelectViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 				7D8460F722570C38009F4D4E /* Assets.xcassets */,
 				7DC584CF225516E1005C9E12 /* Info.plist */,
 				C8C539DA22662FD90020C3B8 /* Models */,
-				C855B0A5226F22BF00A67B2E /* genreSelections.swift */,
+				C855B0A5226F22BF00A67B2E /* config.swift */,
 			);
 			path = "Stream Rooms";
 			sourceTree = "<group>";
@@ -491,7 +491,7 @@
 				C855B0AE226F5FA300A67B2E /* ArtistSelectViewController.swift in Sources */,
 				7DA0382C225A90E80068B386 /* LoginViewController.swift in Sources */,
 				C8C6C3862266BB4F0078BB50 /* StreamViewController.swift in Sources */,
-				C855B0A6226F22BF00A67B2E /* genreSelections.swift in Sources */,
+				C855B0A6226F22BF00A67B2E /* config.swift in Sources */,
 				7DA0382A2259A4510068B386 /* ProfileViewController.swift in Sources */,
 				7DA038262259A4340068B386 /* MusicViewController.swift in Sources */,
 				C855B0B2226FE1C600A67B2E /* EditProfileViewController.swift in Sources */,

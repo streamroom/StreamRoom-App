@@ -39,3 +39,5 @@ let spotifyGenres = [
                     "soundtracks",
                     "work-out"
                     ]
+
+let API = "BQBGBIkifyGqSlknbAQjUgL6A2n6krWlkq5dw_9oMo4tYHYuCEbDM0F1iOg0bhEVcwADNxYKvixZD"

@@ -15,11 +15,18 @@ class ArtistSelectViewController: UIViewController, UITableViewDataSource, UITab
     var genres: [String] = []
     var artists: [String] = []
     @IBOutlet weak var shareLabel: UILabel!
+    @IBOutlet weak var nextButton: PMSuperButton!
     
     var selectedArtists: [String] = []
     var _selectedCells: NSMutableArray = []
 
     @IBOutlet weak var artistTable: UITableView!
+    
+    let selectMore = UIAlertController(title: "No Selection!", message: "Select at least one artist.", preferredStyle: .actionSheet)
+    let selectLess = UIAlertController(title: "Too Many Selections!", message: "Select no more than 10 genres.", preferredStyle: .actionSheet)
+    
+    let moreOK = UIAlertAction(title: "Ok", style: .cancel)
+    let lessOK = UIAlertAction(title: "Ok", style: .cancel)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +36,23 @@ class ArtistSelectViewController: UIViewController, UITableViewDataSource, UITab
             print("didn't crash")
         }
         artistTable.allowsMultipleSelection = true
+        selectMore.addAction(moreOK)
+        selectLess.addAction(lessOK)
+        next()
         
 
+    }
+    
+    func next() {
+        nextButton.touchUpInside() {
+            if self.selectedArtists.count == 0 {
+                self.present(self.selectMore, animated: true)
+            } else if self.selectedArtists.count > 10 {
+                self.present(self.selectLess, animated: true)
+            } else {
+                self.performSegue(withIdentifier: "newUserToHome", sender: nil)
+            }
+        }
     }
     
     func getArtists(completion: @escaping ([String]?) -> ()) {
@@ -50,7 +72,7 @@ class ArtistSelectViewController: UIViewController, UITableViewDataSource, UITab
         
         let artistURL = URL(string: baseURLString + genreString)!
         
-        let headers: HTTPHeaders = ["Authorization": "Bearer BQCei1vj6VqIBPrZWoCiVfVixFybQ04kOW6bDGRsxuc4sgVWfQsKvgsO0IM99GNF24vPkwNlRBjgt7KmY8hm8Fvq_wMnjUReEHtEnvDS6FXireP6TLuk9s46asBl8H6b2fCBmf0Qb8D377mgJJg", "Accept": "application/json", "Content-Type": "application/json"]
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(API)", "Accept": "application/json", "Content-Type": "application/json"]
         
         
         Alamofire.request( artistURL, headers: headers).responseJSON { response in
