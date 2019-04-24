@@ -24,5 +24,21 @@ class ProfileViewController: UIViewController {
 
        
     }
+    
+    
+    @IBAction func onEdit(_ sender: Any) {
+        self.performSegue(withIdentifier: "editSegue", sender: nil)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
