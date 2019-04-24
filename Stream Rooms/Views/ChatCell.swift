@@ -23,7 +23,7 @@ class ChatCell: UITableViewCell {
                 usernameLabel.text = user.username
             } else {usernameLabel.text = "<No Username>"}
             let dateFormatterPrint = DateFormatter()
-            dateFormatterPrint.dateFormat = "MMM d, yyyy h:mm a"
+            dateFormatterPrint.dateFormat = "MM-dd-yyyy h:mm a"
             dateLabel.text = dateFormatterPrint.string(from: message.createdAt!)
         }
     }
