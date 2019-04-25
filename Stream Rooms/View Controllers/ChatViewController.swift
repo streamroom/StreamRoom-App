@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var sendButton: UIButton!
@@ -29,7 +29,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 50
         refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(SettingsViewController.didPullToRefresh(_:)), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(ChatViewController.didPullToRefresh(_:)), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
         tableView.separatorStyle = .none
         tableView.scrollsToTop = true

@@ -21,7 +21,8 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        profilePic.image = UIImage(named: "index")
+        usernameLabel.text = "Barack Obama"
        
     }
     
