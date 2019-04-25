@@ -52,7 +52,7 @@ class ArtistSelectViewController: UIViewController, UITableViewDataSource, UITab
                 self.present(self.selectLess, animated: true)
             } else {
                 let user = PFUser.current()
-                user?.addObjects(from: self.selectedArtists, forKey: "astists")
+                user?.addObjects(from: self.selectedArtists, forKey: "artists")
                 self.performSegue(withIdentifier: "newUserToHome", sender: nil)
             }
         }
