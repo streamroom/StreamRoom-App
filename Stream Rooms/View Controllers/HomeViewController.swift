@@ -27,7 +27,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         let interItemSpacingTotal = layout.minimumInteritemSpacing * (cellsPerLine - 1)
         let width = (streamCollectionView.frame.size.width / cellsPerLine) - (interItemSpacingTotal / cellsPerLine)
         layout.itemSize = CGSize(width: width, height: width * 2 / 3)
-        getStreams()
         
         
     }

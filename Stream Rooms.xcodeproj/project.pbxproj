@@ -12,7 +12,7 @@
 		7D5FC96022700391006A2970 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FC95F22700391006A2970 /* ChatCell.swift */; };
 		7DA038232257E1D30068B386 /* RAMAnimatedTabBarController in Resources */ = {isa = PBXBuildFile; fileRef = 7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */; };
 		7DA038262259A4340068B386 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038252259A4340068B386 /* MusicViewController.swift */; };
-		7DA038282259A4460068B386 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038272259A4460068B386 /* ChatViewController.swift */; };
+		7DA038282259A4460068B386 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038272259A4460068B386 /* SettingsViewController.swift */; };
 		7DA0382A2259A4510068B386 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA038292259A4510068B386 /* ProfileViewController.swift */; };
 		7DA0382C225A90E80068B386 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA0382B225A90E80068B386 /* LoginViewController.swift */; };
 		7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9A87F22568A33008B61DD /* HomeViewController.swift */; };
@@ -64,7 +64,7 @@
 		7D624D92226797B0003C4A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7DA038222257E1D30068B386 /* RAMAnimatedTabBarController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RAMAnimatedTabBarController; path = "../../animated-tab-bar/RAMAnimatedTabBarController"; sourceTree = "<group>"; };
 		7DA038252259A4340068B386 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
-		7DA038272259A4460068B386 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7DA038272259A4460068B386 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7DA038292259A4510068B386 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7DA0382B225A90E80068B386 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7DB9A87F22568A33008B61DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 			children = (
 				7DB9A87F22568A33008B61DD /* HomeViewController.swift */,
 				7DA038252259A4340068B386 /* MusicViewController.swift */,
-				7DA038272259A4460068B386 /* ChatViewController.swift */,
+				7DA038272259A4460068B386 /* SettingsViewController.swift */,
 				7DA038292259A4510068B386 /* ProfileViewController.swift */,
 				C8C6C3852266BB4F0078BB50 /* StreamViewController.swift */,
 				C8C6C3872266C5E40078BB50 /* CreateStreamViewController.swift */,
@@ -501,7 +501,7 @@
 				C855B0B2226FE1C600A67B2E /* EditProfileViewController.swift in Sources */,
 				7DC584C4225516DE005C9E12 /* AppDelegate.swift in Sources */,
 				C855B0AC226F2E9600A67B2E /* GenreCell.swift in Sources */,
-				7DA038282259A4460068B386 /* ChatViewController.swift in Sources */,
+				7DA038282259A4460068B386 /* SettingsViewController.swift in Sources */,
 				C855B0B0226F9A8C00A67B2E /* ArtistCell.swift in Sources */,
 				7DB9A88022568A33008B61DD /* HomeViewController.swift in Sources */,
 				C8C6C3882266C5E40078BB50 /* CreateStreamViewController.swift in Sources */,
