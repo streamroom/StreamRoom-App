@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 import Alamofire
 import PMSuperButton
 
@@ -50,6 +51,8 @@ class ArtistSelectViewController: UIViewController, UITableViewDataSource, UITab
             } else if self.selectedArtists.count > 10 {
                 self.present(self.selectLess, animated: true)
             } else {
+                let user = PFUser.current()
+                user?.addObjects(from: self.selectedArtists, forKey: "astists")
                 self.performSegue(withIdentifier: "newUserToHome", sender: nil)
             }
         }
@@ -99,7 +102,7 @@ class ArtistSelectViewController: UIViewController, UITableViewDataSource, UITab
     
     func updateCount() {
         if selectedArtists.count > 0 {
-            shareLabel.text = "\(selectedArtists.count) selected"
+            shareLabel.text = "\(selectedArtists.count) selected (Max 10)"
         } else {
             shareLabel.text = ""
         }

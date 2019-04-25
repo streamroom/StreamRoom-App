@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 import PMSuperButton
 
 class GenreSelectViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -44,6 +45,8 @@ class GenreSelectViewController: UIViewController, UICollectionViewDataSource, U
             } else if self.selectedGenres.count > 5 {
                 self.present(self.selectLess, animated: true)
             } else {
+                let user = PFUser.current()
+                user?.addObjects(from: self.selectedGenres, forKey: "genres")
                 self.performSegue(withIdentifier: "artistSelect", sender: nil)
             }
         }
@@ -80,11 +83,10 @@ class GenreSelectViewController: UIViewController, UICollectionViewDataSource, U
     
     func updateCount() {
         if selectedGenres.count > 0 {
-            shareLabel.text = "\(selectedGenres.count) selected"
+            shareLabel.text = "\(selectedGenres.count) selected (Max 5)"
         } else {
             shareLabel.text = ""
         }
-        
         UIView.animate(withDuration: 0.3) {
             self.shareLabel.sizeToFit()
         }
@@ -112,7 +114,6 @@ class GenreSelectViewController: UIViewController, UICollectionViewDataSource, U
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let artistVC = segue.destination as! ArtistSelectViewController
         artistVC.genres = selectedGenres
-        
     }
     
 }

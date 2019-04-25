@@ -11,6 +11,9 @@ target 'Stream Rooms' do
 	pod 'PMSuperButton'
 	pod 'Alamofire'
 	pod 'LTMorphingLabel'
+	pod 'MaterialTextField'
+	pod 'TweeTextField'
+
 
   target 'Stream RoomsTests' do
     inherit! :search_paths

@@ -2,37 +2,45 @@ PODS:
   - Alamofire (4.8.2)
   - Bolts/Tasks (1.9.0)
   - LTMorphingLabel (0.7.0)
+  - MaterialTextField (1.0.1)
   - Parse (1.17.2):
     - Parse/Core (= 1.17.2)
   - Parse/Core (1.17.2):
     - Bolts/Tasks (~> 1.9)
   - PMSuperButton (3.0.1)
   - RAMAnimatedTabBarController (5.0.0)
+  - TweeTextField (1.5.1)
 
 DEPENDENCIES:
   - Alamofire
   - LTMorphingLabel
+  - MaterialTextField
   - Parse
   - PMSuperButton
   - RAMAnimatedTabBarController
+  - TweeTextField
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Bolts
     - LTMorphingLabel
+    - MaterialTextField
     - Parse
     - PMSuperButton
     - RAMAnimatedTabBarController
+    - TweeTextField
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   LTMorphingLabel: 22147fb1ec2b0306537ccc348b36ea8617179b03
+  MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
   Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
   PMSuperButton: 2bef6f8659a5df969a69887f496ef309480c65eb
   RAMAnimatedTabBarController: 6736db7bec2ec74d64059ee9cb40cb9bd281338e
+  TweeTextField: 18c7c8990a4a0926ce8ba73fc87e52df4f26805b
 
-PODFILE CHECKSUM: 2b9f7710d3589d02d37f854175cfeec34246f331
+PODFILE CHECKSUM: 93566869bdac85417a9614966ee0dc813b124253
 
 COCOAPODS: 1.5.3

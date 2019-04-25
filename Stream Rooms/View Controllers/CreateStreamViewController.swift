@@ -8,22 +8,34 @@
 
 import UIKit
 import Parse
+import PMSuperButton
 
 class CreateStreamViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var titleInput: UITextField!
     @IBOutlet weak var imagePicker: UIImageView!
-    @IBOutlet weak var createStreamroomButton: UIButton!
+    @IBOutlet weak var createStreamroomButton: PMSuperButton!
     @IBOutlet weak var privacySwitch: UISwitch!
+    @IBOutlet weak var instructions: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.isUserInteractionEnabled = true
+        imagePicker.layer.cornerRadius = 5
+        
         let pictureTap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        createStreamroomButton.layer.cornerRadius = 20
         imagePicker.addGestureRecognizer(pictureTap)
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction(_:)))
+        self.view.addGestureRecognizer(panGestureRecognizer)
+        Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.dismissInstruction), userInfo: nil, repeats: false)
 
+    }
+    
+    @objc func dismissInstruction() {
+        UIView.animate(withDuration: 2.0) {
+            self.instructions.alpha = 0
+        }
     }
     
     @objc func imageTapped(_ sender: UITapGestureRecognizer) {
@@ -42,7 +54,6 @@ class CreateStreamViewController: UIViewController, UIImagePickerControllerDeleg
     
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // Get the image captured by the UIImagePickerController
         //let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         guard let editedImage = info[.editedImage] as? UIImage else {
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
@@ -53,31 +64,20 @@ class CreateStreamViewController: UIViewController, UIImagePickerControllerDeleg
         dismiss(animated: true, completion: nil)
     }
     
-    
-    @IBAction func onCreate(_ sender: Any) {
-        let streamName = titleInput.text!
-        let streamImage = imagePicker.image!
-        let streamPrivacyBool = privacySwitch.isOn
-        let streamPrivacy = NSNumber(booleanLiteral: streamPrivacyBool)
-        
-        Streamroom.createStreamroom(name: streamName, image: streamImage, owner: PFUser.current()!, privacy: streamPrivacy) { (success: Bool, error: Error?) in
-            if success {
-                self.performSegue(withIdentifier: "createToHome", sender: nil)
-            } else if let error = error {
-                print(error.localizedDescription)
+    @objc func panGestureRecognizerAction(_ gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translation(in: view)
+        view.frame.origin = translation
+        if gesture.state == .ended {
+            let velocity = gesture.velocity(in: view)
+            if velocity.y >= 500 {
+                //dismiss the view
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                //return to original position
+                UIView.animate(withDuration: 0.3) {
+                    self.view.frame.origin = CGPoint(x: 0,y: 0)
+                }
             }
         }
-        self.performSegue(withIdentifier: "createToHome", sender: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -9,25 +9,18 @@
 import UIKit
 import Parse
 
-class HomeViewController: UIViewController, UICollectionViewDataSource {
+class HomeViewController: UIViewController, UITableViewDataSource {
 
-    @IBOutlet weak var streamCollectionView: UICollectionView!
+    @IBOutlet weak var streamTableView: UITableView!
     
     var streamrooms: [Streamroom] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        streamCollectionView.dataSource = self
-        
-        let layout = streamCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.minimumInteritemSpacing = 1
-        layout.minimumLineSpacing = layout.minimumInteritemSpacing
-        let cellsPerLine: CGFloat = 1
-        let interItemSpacingTotal = layout.minimumInteritemSpacing * (cellsPerLine - 1)
-        let width = (streamCollectionView.frame.size.width / cellsPerLine) - (interItemSpacingTotal / cellsPerLine)
-        layout.itemSize = CGSize(width: width, height: width * 2 / 3)
-        
+        streamTableView.dataSource = self
+        streamTableView.estimatedRowHeight = 300
+        streamTableView.rowHeight = UITableView.automaticDimension
+        getStreams()
         
     }
     
@@ -43,21 +36,33 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
             if let rooms = rooms {
                 print("Posts were found!")
                 self.streamrooms = rooms as! [Streamroom]
-                self.streamCollectionView.reloadData()
+                self.streamTableView.reloadData()
             } else {
                 print(error!.localizedDescription)
             }
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return streamrooms.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = streamTableView.dequeueReusableCell(withIdentifier: "StreamCell", for: indexPath) as! StreamCell
+        let stream = streamrooms[indexPath.row]
+        cell.stream = stream
+        cell.streamName.text = stream.name
+        let imageData = stream.image
+        imageData?.getDataInBackground(block: { (data, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            } else {
+                print("Image was found!")
+                cell.streamImage.image = UIImage(data: data!)
+                self.streamTableView.reloadData()
+            }
+        })
         
-        let cell = streamCollectionView.dequeueReusableCell(withReuseIdentifier: "StreamCell", for: indexPath) as! StreamCell
-        cell.stream = streamrooms[indexPath.row]
         
         return cell
     }
@@ -65,16 +70,4 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
     @IBAction func onCreateStream(_ sender: Any) {
         self.performSegue(withIdentifier: "createStream", sender: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {/Users/jalejandre/Desktop/Assets.xcassets
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
 }
