@@ -110,8 +110,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func roundButtons() {
-        logoutButton.layer.cornerRadius = 20
-        sendButton.layer.cornerRadius = 20
+        logoutButton.layer.cornerRadius = 15
+        sendButton.layer.cornerRadius = 15
     }
     
     

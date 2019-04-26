@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -114,7 +114,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="streamrooms" translatesAutoresizingMaskIntoConstraints="NO" id="sDE-1b-jHC">
-                                <rect key="frame" x="32" y="144" width="350" height="350"/>
+                                <rect key="frame" x="32" y="144" width="350.00000000000023" height="350.00000000000023"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Pvl-fW-b5X"/>
                                     <constraint firstAttribute="width" secondItem="sDE-1b-jHC" secondAttribute="height" multiplier="1:1" id="mil-hi-dtp"/>
@@ -268,7 +268,7 @@
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="laK-nS-hzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="kaC-GE-Asn" customClass="RAMFlipBottomTransitionItemAnimations" customModule="RAMAnimatedTabBarController">
+                <customObject id="kaC-GE-Asn" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                             <real key="value" value="1"/>
@@ -383,7 +383,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZf-Gx-ir3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="8Ti-zC-10h" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController">
+                <customObject id="8Ti-zC-10h" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                             <real key="value" value="1"/>
@@ -423,7 +423,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter username or streamroom name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0PG-Hb-YYN" customClass="MFTextField">
-                                <rect key="frame" x="20" y="135" width="374" height="30"/>
+                                <rect key="frame" x="20" y="135" width="374" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
@@ -490,7 +490,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oL-3x-shk" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="20" y="195" width="118" height="30"/>
+                                <rect key="frame" x="20" y="195" width="118" height="40"/>
                                 <color key="backgroundColor" red="0.50790319709999998" green="0.77467424409999996" blue="0.86383146050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="User">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -513,7 +513,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WU-E2-Pu7" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="344" y="195" width="50" height="30"/>
+                                <rect key="frame" x="344" y="195" width="50" height="40"/>
                                 <color key="backgroundColor" red="0.50790319709999998" green="0.77467424409999996" blue="0.86383146050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="4nf-YA-iNy"/>
@@ -547,7 +547,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBX-5v-xXS" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="148" y="195" width="118" height="30"/>
+                                <rect key="frame" x="148" y="195" width="118" height="40"/>
                                 <color key="backgroundColor" red="0.50790319709999998" green="0.77467424409999996" blue="0.86383146050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Streamroom">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -574,7 +574,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-wf-ihm">
-                                <rect key="frame" x="0.0" y="250" width="414" height="612"/>
+                                <rect key="frame" x="0.0" y="260" width="414" height="602"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -945,7 +945,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc4-cn-oW6">
-                                                    <rect key="frame" x="20" y="10" width="123" height="36"/>
+                                                    <rect key="frame" x="20" y="10" width="123" height="41"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="123" id="gTO-vi-6ji"/>
                                                     </constraints>
@@ -954,12 +954,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM/DD/YYYY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al5-8f-FB4">
-                                                    <rect key="frame" x="267" y="11" width="127" height="35"/>
+                                                    <rect key="frame" x="267" y="14.5" width="127" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="GGP-I3-xbL"/>
                                                         <constraint firstAttribute="width" constant="127" id="ido-Rh-UGy"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1009,7 +1009,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeL-aC-EyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="kl5-oP-s41" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController">
+                <customObject id="kl5-oP-s41" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                             <real key="value" value="1"/>
@@ -1229,7 +1229,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbq-Mi-x88" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="7id-7N-lPl" customClass="RAMRotationAnimation" customModule="RAMAnimatedTabBarController">
+                <customObject id="7id-7N-lPl" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                             <real key="value" value="1"/>
@@ -1684,23 +1684,23 @@
     <resources>
         <image name="Icon-Checkmark" width="512" height="512"/>
         <image name="Icon-Edit" width="512" height="512"/>
-        <image name="Icon-Lock" width="75" height="75"/>
-        <image name="Icon-User" width="75" height="75"/>
+        <image name="Icon-Lock" width="100" height="100"/>
+        <image name="Icon-User" width="100" height="100"/>
         <image name="Login" width="1090" height="595"/>
         <image name="TabBar-Chat" width="30" height="30"/>
         <image name="TabBar-Home" width="30" height="30"/>
         <image name="TabBar-Music" width="30" height="30"/>
         <image name="TabBar-Profile" width="30" height="30"/>
-        <image name="checked" width="153.19148254394531" height="153.19148254394531"/>
+        <image name="checked" width="100" height="100"/>
         <image name="cover-placeholder" width="1024" height="768"/>
         <image name="new6" width="128" height="128"/>
-        <image name="poly1" width="643.20001220703125" height="402"/>
-        <image name="poly5" width="643.20001220703125" height="402"/>
-        <image name="poly7" width="643.20001220703125" height="402"/>
-        <image name="poly8" width="643.20001220703125" height="402"/>
-        <image name="poly9" width="643.20001220703125" height="402"/>
+        <image name="poly1" width="1340" height="837.5"/>
+        <image name="poly5" width="1340" height="837.5"/>
+        <image name="poly7" width="1340" height="837.5"/>
+        <image name="poly8" width="1340" height="837.5"/>
+        <image name="poly9" width="1340" height="837.5"/>
         <image name="streamrooms" width="958" height="886"/>
-        <image name="unchecked" width="153.19148254394531" height="153.19148254394531"/>
+        <image name="unchecked" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="str-gT-q9h"/>
