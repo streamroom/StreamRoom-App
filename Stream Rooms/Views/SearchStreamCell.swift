@@ -10,6 +10,8 @@ import UIKit
 
 class SearchStreamCell: UITableViewCell {
 
+    @IBOutlet weak var streamroomName: UILabel!
+    @IBOutlet weak var streamroomOwner: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

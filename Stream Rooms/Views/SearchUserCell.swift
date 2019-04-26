@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import PMSuperButton
 
 class SearchUserCell: UITableViewCell {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var addFriend: PMSuperButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }
