@@ -12,7 +12,7 @@ import PMSuperButton
 import TweeTextField
 import MaterialTextField
 
-class SearchViewController: UIViewController, UITableViewDataSource {
+class SearchViewController: UIViewController {
 
     @IBOutlet weak var userSearch: PMSuperButton!
     @IBOutlet weak var searchBar: MFTextField!
@@ -60,13 +60,13 @@ class SearchViewController: UIViewController, UITableViewDataSource {
         })
     }
     
-    func numb
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
+//    func numb
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
 }

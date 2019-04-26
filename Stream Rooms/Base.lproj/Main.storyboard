@@ -14,7 +14,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" title="Welcome" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Stream_Rooms" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1104,7 +1104,7 @@
                                 <state key="normal" image="Icon-Edit"/>
                                 <connections>
                                     <action selector="onEdit:" destination="JKY-0y-oKr" eventType="touchUpInside" id="Ssa-mp-U6B"/>
-                                    <segue destination="z1p-lW-SZN" kind="popoverPresentation" popoverAnchorView="JpI-Ha-HLE" id="jlL-26-ahe">
+                                    <segue destination="z1p-lW-SZN" kind="popoverPresentation" identifier="editSegue" popoverAnchorView="JpI-Ha-HLE" id="jlL-26-ahe">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
@@ -1179,6 +1179,9 @@
                                     <constraint firstAttribute="width" secondItem="a80-DI-rPb" secondAttribute="height" multiplier="1:1" id="yAx-dn-rqU"/>
                                 </constraints>
                                 <state key="normal" image="Icon-Checkmark"/>
+                                <connections>
+                                    <action selector="onSave:" destination="z1p-lW-SZN" eventType="touchUpInside" id="S3p-dz-sD8"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hf7-fj-Taa">
                                 <rect key="frame" x="107" y="120" width="200" height="200"/>
@@ -1317,6 +1320,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UIF-Wb-CI6"/>
                     </view>
+                    <connections>
+                        <outlet property="birthdayField" destination="fOk-YF-wur" id="UJy-gQ-QzD"/>
+                        <outlet property="genderField" destination="5kV-4G-nvY" id="Gff-U1-XRe"/>
+                        <outlet property="nameField" destination="GxD-qi-shX" id="D1c-RA-roY"/>
+                        <outlet property="phoneField" destination="zxn-7h-MzF" id="bvq-rf-jWq"/>
+                        <outlet property="universityField" destination="xs7-2h-WLw" id="2Pa-ni-GV9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qen-lQ-Ma6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
