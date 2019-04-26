@@ -29,6 +29,7 @@ class CreateStreamViewController: UIViewController, UIImagePickerControllerDeleg
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction(_:)))
         self.view.addGestureRecognizer(panGestureRecognizer)
         Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.dismissInstruction), userInfo: nil, repeats: false)
+        create()
 
     }
     
@@ -40,6 +41,13 @@ class CreateStreamViewController: UIViewController, UIImagePickerControllerDeleg
     
     @objc func imageTapped(_ sender: UITapGestureRecognizer) {
         chooseImage()
+    }
+    
+    func create() {
+        createStreamroomButton.touchUpInside() {
+            Streamroom.createStreamroom(name: self.titleInput.text!, image: self.imagePicker.image!, owner: PFUser.current()!, privacy: self.privacySwitch.isOn as NSNumber, withCompletion: nil)
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     func chooseImage() {

@@ -40,4 +40,4 @@ let spotifyGenres = [
                     "work-out"
                     ]
 
-let API = "BQCj5YQTNTZIZmRMgwncWPHx5hfei7RdHhWtWCu-RUCCVpn-Vw57tN6aVVP0qveGqL2Z-Y046NNDa5BSkkMKXMdMsCpSfAOJ8QXzS4iZN5NuFTSzMloUKuEYTSGWAZFRB8R9ZMe8i8M-aHhycik"
+let API = "BQBYC3cc9juXLTGmI5nwccB_VeZ86egY8j1H5xTOsIGz5rYhjw8vaKyovnY9re0t9CGiKdrgTxZmYZoIfKXA9ok9U0jwtMX1n5t1ey8qIH78BdsxeaALZMqmTMgR4jckzENrvv0XSowXOOtQJQg"

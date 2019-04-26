@@ -24,6 +24,10 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        getStreams()
+    }
+    
     func getStreams() {
         let query = Streamroom.query()
         query?.order(byDescending: "createdAt")
