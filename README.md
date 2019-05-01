@@ -190,4 +190,4 @@ Allows the user to choose their favorite genres and artists and then suggests th
 https://dashboard.heroku.com/apps/obscure-journey-30297
 
 
-<img src="https://puu.sh/DmvlJ/188994bc12.gif" width=250><br>
+<img src="http://g.recordit.co/O6Fo4ieHWf.gif" width=250><br>
